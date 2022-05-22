@@ -1,0 +1,8 @@
+.marqueContainer {
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid var(--secondaryBackgroundColor);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

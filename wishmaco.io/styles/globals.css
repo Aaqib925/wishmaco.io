@@ -1,0 +1,100 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Bungee";
+  src: url("/fonts/Bungee/Bungee-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bungee-Inline";
+  src: url("/fonts/Bungee-Inline/BungeeInline-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bungee-Hairline";
+  src: url("/fonts/Bungee-Hairline/BungeeHairline-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Phosphate";
+  src: url("/fonts/Phosphate/Phosphate.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSansKannada";
+  src: url("/fonts/NotoSansKannada/NotoSansKannada-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: #2E2E2D;
+  --bungee: "Bungee";
+  --bungee-inline: "Bungee-Inline";
+  --bungee-hairline: "Bungee-Hairline";
+  --whiteText: #F8FAEE;
+  --secondaryBackgroundColor: #447A9C;
+  --pinkBackground: #EB5C68;
+  --lightBlue: #A8DADC;
+  --Phosphate: "Phosphate";
+  --NotoSansKannada: "NotoSansKannada"
+}
+
+.buttonStyles {
+  border-radius: 100px;
+  font-family: var(--bungee);
+  padding: 0.1rem 1rem;
+  box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
+  filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.buttonTextStyles {
+  color: var(--whiteText);
+  font-size: 1.8rem;
+  text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.marque-dot {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: var(--bungee-inline);
+  font-size: 2.5rem;
+  color: var(--whiteText);
+}
+
+.marque-text {
+  font-family: var(--bungee-inline);
+  font-size: 2.8rem;
+  color: var(--whiteText);
+}

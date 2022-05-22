@@ -1,0 +1,60 @@
+.timeToDropContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeDropText {
+    font-family: var(--bungee);
+    color: var(--secondaryBackgroundColor);
+    font-size: 2.2rem;
+}
+
+.timerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.eachTimerContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.eachCountTextContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--pinkBackground);
+    border-radius: 10px;
+    width: 2.2rem;
+    height: 3rem;
+    margin: 0 2px;
+}
+
+.eachCountText {
+    color: var(--whiteText);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.eachCountKey {
+    color: var(--secondaryBackgroundColor);
+    font-size: 1rem;
+    font-family: var(--Phosphate);
+}
+.eachCountSeperatorContainer {
+    margin-top: 10px;
+}
+
+.eachCountSeperator {
+    color: var(--pinkBackground);
+    font-family: var(--bungee);
+    font-size: 1.5rem;
+    margin: 0 5px;
+}

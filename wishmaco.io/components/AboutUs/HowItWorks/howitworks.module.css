@@ -1,0 +1,48 @@
+.howItWorksContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.guidelineText {
+    font-family: var(--bungee);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--whiteText);
+}
+.guidelineTextAddTopMargin {
+    margin-top: 0.6rem;
+}
+
+.personalizeTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.personalizeText {
+    font-family: var(--bungee);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--lightBlue);
+}
+
+.guidelineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nftYourSelfButton {
+    background-color: var(--pinkBackground);
+    margin-left: 1rem;
+}
