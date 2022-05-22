@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .mintPriceText {
@@ -12,11 +13,15 @@
     font-size: 2rem;
     text-align: center;
 }
+
 .actionButtons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+    z-index: 2;
 }
 
 .counterButton {
@@ -38,6 +43,7 @@
     padding-left: 1.2rem;
     margin: 0 0.5rem;
 }
+
 .buttonContainer {
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
@@ -59,13 +65,18 @@
     color: var(--secondaryBackgroundColor);
     text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
 }
+
 .mintButtons {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
+
 .mintButton {
     background-color: var(--secondaryBackgroundColor);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
 }

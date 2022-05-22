@@ -6,7 +6,7 @@ import timeToDropStyles from './timetodrop.module.css'
 const endTime = moment().add(20, 'days');
 
 const TimeToDrop = () => {
-    const [duration, setDuration] = useState([]);
+    const [duration, setDuration] = useState([ ]);
     useEffect(() => {
         let interval = setInterval(() => {
             setDuration(formatTimerDuration(moment(), endTime));
@@ -24,11 +24,10 @@ const TimeToDrop = () => {
                             <React.Fragment key={`${each?.key}-${index}`}>
                                 <div className={timeToDropStyles.eachTimerContainer} >
                                     <div style={{ display: 'flex' }}>
-                                        {/* <span className={timeToDropStyles.eachCountText} >{each?.count}</span> */}
                                         {
-                                            each?.count.toString().split('').map(count => {
+                                            each?.count.toString().split('').map((count, index) => {
                                                 return (
-                                                    <div key={count} className={timeToDropStyles.eachCountTextContainer}>
+                                                    <div key={`${count}-${index}`} className={timeToDropStyles.eachCountTextContainer}>
                                                         <span className={timeToDropStyles.eachCountText} >{count}</span>
                                                     </div>
                                                 )

@@ -10,9 +10,11 @@
     font-family: var(--bungee);
     color: var(--pinkBackground);
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 .connectButton {
     background-color: var(--whiteText);
+    z-index: 2;
 }
 .connectButtonText {
     color: var(--secondaryBackgroundColor);
