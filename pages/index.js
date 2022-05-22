@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import AboutUsSection from '../components/AboutUs'
 import IntroSection from '../components/Intro'
 import PublicMintSection from '../components/PublicMint'
 
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <IntroSection />
       <PublicMintSection />
-
+      <AboutUsSection />
     </div>
   )
 }
