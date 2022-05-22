@@ -5,7 +5,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+@font-face {
+  font-family: "Bungee";
+  src: url("/fonts/Bungee/Bungee-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +19,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: #2E2E2D;
+  --bungee: "Bungee";
+  --whiteText: #F8FAEE
+}
+
+.buttonStyles {
+  border-radius: 100px;
+  font-family: var(--bungee);
+  padding: 0.3rem 1rem;
+}
+
+.buttonTextStyles {
+  color: var(--whiteText);
+  font-size: 1.8rem;
+  text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
 }
