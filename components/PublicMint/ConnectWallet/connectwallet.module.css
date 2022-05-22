@@ -1,0 +1,19 @@
+.connectWalletContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.walletConnectText {
+    font-family: var(--bungee);
+    color: var(--pinkBackground);
+    font-size: 1.5rem;
+}
+.connectButton {
+    background-color: var(--whiteText);
+}
+.connectButtonText {
+    color: var(--secondaryBackgroundColor);
+}

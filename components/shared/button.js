@@ -5,15 +5,16 @@ const Button = ({
     className = "",
     handleClick = () => { },
     textClassName = "",
+    plusIcon = false
 }) => {
 
     return (
         <div
-            className={"buttonStyles " + className}
+            className={`buttonStyles ${className}`}
             type="button"
             onClick={handleClick}
         >
-            <span className={"buttonTextStyles" + textClassName}>
+            <span className={`buttonTextStyles ${textClassName}`}>
                 {title}
             </span>
         </div>

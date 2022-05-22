@@ -1,7 +1,6 @@
 .headerImagesContainer {
     width: 100%;
     display: flex;
-    background-color: var(--backgroundColor);
     align-items: center;
     justify-content: center;
     padding-top: 20px;
