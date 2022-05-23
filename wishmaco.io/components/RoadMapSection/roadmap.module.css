@@ -19,13 +19,16 @@
     position: absolute;
     z-index: 2;
 }
+
 .removeMarqueTopMargin {
     margin-top: 0 !important;
 }
+
 .roadMapButtonContainer {
     padding: 1rem 2rem;
-box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.43), inset -3px 4px 10px rgba(163, 163, 163, 0.28);
+    box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.43), inset -3px 4px 10px rgba(163, 163, 163, 0.28);
 }
+
 .roadMapButton {
     color: var(--whiteText);
     font-size: 3rem;

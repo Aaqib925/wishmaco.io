@@ -10,8 +10,8 @@
 }
 .publicMintContainer::after {
     content: "";
-    background: url("/sectionText2.jpg");
-    opacity: 0.1;
+    background: url("/sectionTexture1.jpg");
+    opacity: 0.08;
     top: 0;
     left: 0;
     bottom: 0;

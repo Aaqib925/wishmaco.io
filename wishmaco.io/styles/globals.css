@@ -3,8 +3,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -97,4 +98,71 @@ a {
   font-family: var(--bungee-inline);
   font-size: 2.8rem;
   color: var(--whiteText);
+}
+
+.customInputContainer {
+  display: flex;
+  background-color: var(--whiteText);
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+
+.customInputContainer input {
+  display: flex;
+  flex: 1;
+  border: none;
+}
+
+.customInputContainer input:focus,
+.customInputContainer input:focus {
+  outline: none;
+}
+
+.customInputContainer input[type="text"] {
+  font-size: 1rem;
+  font-family: var(--bungee);
+}
+
+.customInputButtonContainer {
+  background-color: var(--secondaryBackgroundColor);
+}
+
+.customInputButtonText {
+  color: var(--whiteText) !important;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--secondaryBackgroundColor);
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--secondaryBackgroundColor);
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--secondaryBackgroundColor);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--secondaryBackgroundColor);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--secondaryBackgroundColor);
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--secondaryBackgroundColor);
 }
