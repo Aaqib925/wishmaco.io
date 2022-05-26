@@ -3,6 +3,7 @@ import AboutUsSection from '../components/AboutUs'
 import IntroSection from '../components/Intro'
 import PublicMintSection from '../components/PublicMint'
 import RoadMapSection from '../components/RoadMapSection'
+import TeamSection from '../components/Team'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <PublicMintSection />
       <AboutUsSection />
       <RoadMapSection />
+      <TeamSection />
     </div>
   )
 }
