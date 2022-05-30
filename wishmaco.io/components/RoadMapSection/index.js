@@ -11,7 +11,7 @@ const RoadMapSection = () => {
             <CustomMarque className={roadMapStyles.removeMarqueTopMargin} />
             <NFTSection />
             <CustomMarque title='Roadmap' />
-            <div>
+            <div className={roadMapStyles.containerPadding}>
                 <Button title='our roadmap will grow as we grow' className={roadMapStyles.roadMapButtonContainer} textClassName={roadMapStyles.roadMapButton} />
                 <RoadMapDetails />
             </div>

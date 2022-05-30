@@ -1,0 +1,25 @@
+.teamContainer {
+    background-color: var(--lightBlue);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.teamContainer::after {
+    content: "";
+    background: url("/sectionTexture1.jpg");
+    opacity: 0.08;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.teamMarqueTopPadding {
+    margin-top: 0 !important;
+}

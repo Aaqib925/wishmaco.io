@@ -33,3 +33,6 @@
     color: var(--whiteText);
     font-size: 3rem;
 }
+.containerPadding {
+    padding: 1rem 0;
+}
