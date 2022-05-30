@@ -10,8 +10,8 @@ const TeamProfiles = () => {
                 {
                     TEAM_MEMBERS.map(each => {
                         return (
-                            <div className={teamProfileStyles.teamNameImageContainer} >
-                                <div className={teamProfileStyles.teamImageContainer} key={each.id}>
+                            <div key={each.id} className={teamProfileStyles.teamNameImageContainer} >
+                                <div className={teamProfileStyles.teamImageContainer} >
                                     <img src={each.image} />
                                 </div>
                                 <span>Name</span>
