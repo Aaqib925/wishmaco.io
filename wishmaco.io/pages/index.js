@@ -1,8 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
 import AboutUsSection from '../components/AboutUs'
 import IntroSection from '../components/Intro'
+import MobileView from '../components/MobileView';
 import PublicMintSection from '../components/PublicMint'
 import RoadMapSection from '../components/RoadMapSection'
+import useCheckMobileScreen from '../hooks/useCheckMobileScreen'
 
 export default function Home() {
   return (
@@ -17,6 +20,15 @@ export default function Home() {
       <PublicMintSection />
       <AboutUsSection />
       <RoadMapSection />
+      {/* {
+        isMobile ?
+          <MobileView />
+          :
+          <>
+       
+          </>
+      } */}
+
     </div>
   )
 }
