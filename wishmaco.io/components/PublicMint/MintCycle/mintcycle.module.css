@@ -10,6 +10,7 @@
     font-family: var(--bungee);
     color: var(--pinkBackground);
     font-size: 4rem;
+    text-align: center;
 }
 
 .mintCountText {
@@ -17,4 +18,26 @@
     color: var(--secondaryBackgroundColor);
     font-size: 2.5rem;
     margin: 1rem 0;
+}
+
+/* iPad */
+@media screen and (max-width: 991px) {
+    .mintCycleText {
+        font-size: 3.5rem;
+    }
+
+    .mintCountText {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .mintCycleText {
+        font-size: 2.8rem;
+    }
+
+    .mintCountText {
+        font-size: 2rem;
+    }
 }

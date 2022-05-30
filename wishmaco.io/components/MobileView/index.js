@@ -6,6 +6,7 @@ import IntroSection from '../Intro';
 import PublicMintSection from '../PublicMint';
 import AboutUsSection from '../AboutUs';
 import RoadMapSection from '../RoadMapSection';
+import TeamSection from '../Team';
 
 const MobileView = () => {
     useEffect(() => {
@@ -16,6 +17,8 @@ const MobileView = () => {
                 navigation: null
             });
         });
+
+        return removeScreenView
     }, []);
 
     const adjustScreenView = () => {
@@ -24,6 +27,14 @@ const MobileView = () => {
 
         htmlContainer.classList.add('setHtmlOverflowHidden');
         bodyContainer.classList.add('setBodyOverflowHidden');
+    }
+
+    const removeScreenView = () => {
+        const htmlContainer = document.querySelector('html');
+        const bodyContainer = document.querySelector('body');
+
+        htmlContainer.classList.remove('setHtmlOverflowHidden');
+        bodyContainer.classList.remove('setBodyOverflowHidden');
     }
 
     return (
@@ -47,6 +58,11 @@ const MobileView = () => {
                 <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <RoadMapSection />
+                    </div>
+                </div>
+                <div className="section">
+                    <div className={animationStyles.sectionContainer} >
+                        <TeamSection />
                     </div>
                 </div>
 

@@ -14,7 +14,7 @@ const HowItWorks = () => {
                 <span className={howItWorksStyles.guidelineText}>
                     Then upload your headshot to
                 </span>
-                <Button title='NFT yourself' className={howItWorksStyles.nftYourSelfButton} />
+                <Button title='NFT yourself' className={howItWorksStyles.nftYourSelfButton} textClassName={howItWorksStyles.nftYourSelfButtonText} />
             </div>
             <div className={howItWorksStyles.personalizeTextContainer}>
                 <span className={howItWorksStyles.personalizeText}>

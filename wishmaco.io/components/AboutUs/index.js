@@ -9,7 +9,7 @@ const AboutUsSection = () => {
         <div className={aboutUsStyles.aboutUsContainer}>
             <CustomMarque title='About Us' className={aboutUsStyles.removeMarqueTopMargin} />
             <AboutUsDetails />
-            <HowItWorks/>
+            <HowItWorks />
         </div>
     )
 }

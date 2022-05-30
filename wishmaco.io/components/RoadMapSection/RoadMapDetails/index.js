@@ -10,7 +10,7 @@ const RoadMapDetails = () => {
             </span>
             <div className={roadMapDetailStyles.feedbackContainer}>
                 <span>Suggest any cause</span>
-                <CustomInput placeholder='Enter your email, The Cause, Reason or Foundation..  '/>
+                <CustomInput className={roadMapDetailStyles.textInputContainer} placeholder='Enter your email, The Cause, Reason or Foundation..  ' />
             </div>
             <div className={roadMapDetailStyles.metverseTextContainer}>
                 <span className={roadMapDetailStyles.metaverseTextStyles}>we will buy a land in metaverse</span>

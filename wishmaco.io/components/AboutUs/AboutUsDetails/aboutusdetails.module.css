@@ -6,6 +6,7 @@
     flex-direction: column;
     padding: 1rem 0;
 }
+
 .buttonContainer {
     background-color: var(--backgroundColor);
     max-width: 60vw;
@@ -29,4 +30,105 @@
     font-size: 2.4rem;
     text-align: center;
     color: var(--whiteText);
+}
+
+/* Laptop */
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+    .buttonContainer {
+        max-width: 80vw;
+    }
+}
+
+
+/* Mini Laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .buttonContainer {
+        max-width: 90vw;
+
+    }
+}
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .buttonContainer {
+        max-width: 95vw;
+    }
+
+    .buttonText {
+        font-size: 2rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 2rem;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .buttonContainer {
+        padding-top: 0.3;
+        padding-bottom: 0.3;
+    }
+
+    .aboutUsDetailsContainer {
+        padding: 0;
+    }
+
+    .buttonContainer {
+        max-width: 97vw;
+    }
+
+    .buttonText {
+        font-size: 1.5rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 694px) {
+    .buttonText {
+        font-size: 1.4rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .buttonText {
+        font-size: 1.3rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .aboutUsDetailsContainer {
+        padding: 0 0.5rem;
+    }
+
+    .buttonText {
+        font-size: 1.2rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .buttonText {
+        font-size: 1.1rem !important;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.1rem;
+    }
 }

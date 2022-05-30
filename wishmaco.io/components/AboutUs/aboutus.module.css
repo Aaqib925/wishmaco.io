@@ -7,6 +7,7 @@
     background: var(--backgroundColor);
     position: relative;
 }
+
 .aboutUsContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
@@ -18,6 +19,16 @@
     position: absolute;
     z-index: 2;
 }
+
 .removeMarqueTopMargin {
     margin-top: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutUsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
 }

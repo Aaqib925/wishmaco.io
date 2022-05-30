@@ -5,10 +5,12 @@ import IntroSection from '../components/Intro'
 import MobileView from '../components/MobileView';
 import PublicMintSection from '../components/PublicMint'
 import RoadMapSection from '../components/RoadMapSection'
-import useCheckMobileScreen from '../hooks/useCheckMobileScreen'
 import TeamSection from '../components/Team'
+import useCheckMobileScreen from '../hooks/useCheckMobileScreen';
 
 export default function Home() {
+  const isMobile = useCheckMobileScreen();
+
   return (
     <div>
       <Head>
@@ -17,20 +19,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
-      <IntroSection />
-      <PublicMintSection />
-      <AboutUsSection />
-      <RoadMapSection />
-      <TeamSection />
-      {/* {
+
+      {
         isMobile ?
           <MobileView />
           :
           <>
-       
+            <IntroSection />
+            <PublicMintSection />
+            <AboutUsSection />
+            <RoadMapSection />
+            <TeamSection />
           </>
-      } */}
-
+      }
     </div>
   )
 }
