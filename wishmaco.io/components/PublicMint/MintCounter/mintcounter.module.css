@@ -8,7 +8,7 @@
 }
 
 .mintPriceText {
-    font-family: var(--bungee);
+    font-family: var(--Panton-Black-Caps);
     color: var(--secondaryBackgroundColor);
     font-size: 2rem;
     text-align: center;
@@ -36,7 +36,7 @@
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
     background-color: var(--whiteText);
-    font-family: var(--bungee);
+    font-family: var(--Panton-Black-Caps);
     font-size: 2rem;
     border-radius: 100px;
     padding-right: 1.2rem;
@@ -48,7 +48,7 @@
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
     background-color: var(--whiteText);
-    font-family: var(--bungee);
+    font-family: var(--Panton-Black-Caps);
     font-size: 2rem;
     border-radius: 100px;
     margin: 0 1rem;

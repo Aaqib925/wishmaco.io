@@ -7,7 +7,7 @@
 }
 
 .timeDropText {
-    font-family: var(--bungee);
+    font-family: var(--Panton-Black-Caps);
     color: var(--secondaryBackgroundColor);
     font-size: 2.2rem;
 }
@@ -56,7 +56,7 @@
 
 .eachCountSeperator {
     color: var(--pinkBackground);
-    font-family: var(--bungee);
+    font-family: var(--Panton-Black-Caps);
     font-size: 1.5rem;
     margin: 0 5px;
 }

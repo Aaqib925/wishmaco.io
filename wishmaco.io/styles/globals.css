@@ -11,6 +11,14 @@ html {
 }
 
 @font-face {
+  font-family: "Panton-Black-Caps";
+  src: url("/fonts/Panton/Panton-BlackCaps.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Bungee";
   src: url("/fonts/Bungee/Bungee-Regular.ttf");
   font-style: normal;
@@ -68,12 +76,13 @@ a {
   --pinkBackground: #EB5C68;
   --lightBlue: #A8DADC;
   --Phosphate: "Phosphate";
-  --NotoSansKannada: "NotoSansKannada"
+  --NotoSansKannada: "NotoSansKannada";
+  --Panton-Black-Caps: "Panton-Black-Caps"
 }
 
 .buttonStyles {
   border-radius: 100px;
-  font-family: var(--bungee);
+  font-family: var(--Panton-Black-Caps);
   padding: 0.1rem 1rem;
   box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
   filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.3));
@@ -87,15 +96,15 @@ a {
 }
 
 .marque-dot {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-family: var(--bungee-inline);
-  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-family: var(--Panton-Black-Caps);
+  font-size: 3rem;
   color: var(--whiteText);
 }
 
 .marque-text {
-  font-family: var(--bungee-inline);
+  font-family: var(--Panton-Black-Caps);
   font-size: 2.8rem;
   color: var(--whiteText);
 }
@@ -125,7 +134,7 @@ a {
 
 .customInputContainer input[type="text"] {
   font-size: 1rem;
-  font-family: var(--bungee);
+  font-family: var(Panton-Black-Caps);
 }
 
 .customInputButtonContainer {
