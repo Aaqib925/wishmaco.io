@@ -1,0 +1,96 @@
+.guideLinesContainer {
+    background-color: var(--backgroundColor);
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.guideLinesContainer::after {
+    content: "";
+    background: url("/sectionTexture1.jpg");
+    opacity: 0.08;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.initialSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.initialSection span {
+    font-family: var(--Panton-Bold);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--whiteText);
+}
+
+.lightBlueDesc {
+    color: var(--lightBlue) !important;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.sectionImageContainer {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionImageContainer img {
+    width: 100%;
+    height: 100%;
+    margin-right: 2rem;
+
+}
+
+.sectionTextContainer {
+    margin: 1rem 0;
+}
+
+.sectionText {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.sectionText span {
+    font-family: var(--Panton-Bold);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--whiteText);
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .guideLinesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 2rem 1rem
+    }
+}

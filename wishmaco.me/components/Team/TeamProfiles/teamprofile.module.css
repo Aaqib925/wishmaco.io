@@ -1,0 +1,54 @@
+.teamProfileContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    z-index: 42;
+}
+
+.teamImagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 22;
+}
+
+.teamNameImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+}
+
+.teamNameImageContainer span {
+    margin: 1.5rem 0;
+    color: var(--backgroundColor);
+}
+
+.teamImageContainer {
+    width: 10rem;
+    min-width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--whiteText);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+}
+
+.teamImageContainer img {
+    width: auto;
+    object-fit: fill;
+    height: 30%;
+}

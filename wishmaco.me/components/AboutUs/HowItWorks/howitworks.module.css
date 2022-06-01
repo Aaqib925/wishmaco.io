@@ -1,0 +1,172 @@
+.howItWorksContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.guidelineText {
+    font-family: var(--Panton-Black-Caps);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--whiteText);
+}
+
+.guidelineTextAddTopMargin {
+    margin-top: 0.6rem;
+}
+
+.personalizeTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.personalizeText {
+    font-family: var(--Panton-Black-Caps);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--lightBlue);
+}
+
+.guidelineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nftYourSelfButton {
+    background-color: var(--pinkBackground);
+    margin-left: 1rem;
+}
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .guidelineText {
+        font-size: 2rem;
+    }
+
+    .personalizeText {
+        font-size: 2rem;
+    }
+
+    .guidelineContainer {
+        flex-direction: column;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.5rem !important;
+    }
+
+}
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .guidelineContainer {
+        flex-direction: column;
+    }
+
+    .buttonContainer {
+        max-width: 97vw;
+    }
+
+    .guidelineText {
+        font-size: 1.5rem;
+    }
+
+    .personalizeText {
+        font-size: 1.5rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.5rem !important;
+    }
+
+    .personalizeTextContainer {
+        padding: 0.6rem 0;
+        padding-top: 0.2rem;
+    }
+
+    .removeMarqueTopMargin {
+        margin-bottom: 0.5rem !important
+    }
+}
+
+@media screen and (max-width: 694px) {
+    .guidelineText {
+        font-size: 1.4rem;
+    }
+
+    .personalizeText {
+        font-size: 1.4rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .guidelineText {
+        font-size: 1.3rem;
+    }
+
+    .personalizeText {
+        font-size: 1.3rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.3rem !important;
+    }
+
+    .personalizeTextContainer {
+        padding: 0rem 0;
+    }
+
+    .removeMarqueTopMargin {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .guidelineText {
+        font-size: 1.2rem;
+    }
+
+    .personalizeText {
+        font-size: 1.2rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.2rem !important;
+    }
+
+    .personalizeTextContainer {
+        padding: 0rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .guidelineText {
+        font-size: 1.1rem;
+    }
+
+    .personalizeText {
+        font-size: 1.1rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.1rem !important;
+    }
+
+}

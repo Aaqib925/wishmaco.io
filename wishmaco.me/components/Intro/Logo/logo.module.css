@@ -17,3 +17,30 @@
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.3));
 }
+
+/* Mini Laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .logoImage {
+        height: 14rem;
+    }
+}
+
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logoImage {
+        height: 12rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 470px) {
+    .logoImage {
+        height: 10rem
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logoImage {
+        height: 9rem;
+    }
+}

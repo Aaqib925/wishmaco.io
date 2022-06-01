@@ -2,6 +2,7 @@
     background: var(--backgroundColor);
     position: relative;
     z-index: 5;
+    width: 100%;
 }
 
 .removeMarqueMarginBottom {
@@ -18,4 +19,26 @@
     right: 0;
     position: absolute;
     z-index: -1;
+}
+
+/* Laptop */
+@media screen and (min-width: 1200px) and (max-width: 1365px) {}
+
+/* Mini Laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile Rotate */
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .introSectionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
 }
