@@ -19,24 +19,8 @@ html {
 }
 
 @font-face {
-  font-family: "Bungee";
-  src: url("/fonts/Bungee/Bungee-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bungee-Inline";
-  src: url("/fonts/Bungee-Inline/BungeeInline-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bungee-Hairline";
-  src: url("/fonts/Bungee-Hairline/BungeeHairline-Regular.ttf");
+  font-family: "Panton-Light-Caps";
+  src: url("/fonts/Panton/Panton-LightCaps.otf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -68,16 +52,14 @@ a {
 
 :root {
   --backgroundColor: #2E2E2D;
-  --bungee: "Bungee";
-  --bungee-inline: "Bungee-Inline";
-  --bungee-hairline: "Bungee-Hairline";
   --whiteText: #F8FAEE;
   --secondaryBackgroundColor: #447A9C;
   --pinkBackground: #EB5C68;
   --lightBlue: #A8DADC;
   --Phosphate: "Phosphate";
   --NotoSansKannada: "NotoSansKannada";
-  --Panton-Black-Caps: "Panton-Black-Caps"
+  --Panton-Black-Caps: "Panton-Black-Caps";
+  --Panton-Light-Caps: "Panton-Light-Caps";
 }
 
 .buttonStyles {
@@ -134,7 +116,7 @@ a {
 
 .customInputContainer input[type="text"] {
   font-size: 1rem;
-  font-family: var(Panton-Black-Caps);
+  font-family: var(--Panton-Black-Caps);
 }
 
 .customInputButtonContainer {

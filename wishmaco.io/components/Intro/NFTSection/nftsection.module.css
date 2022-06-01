@@ -6,8 +6,7 @@
 }
 
 .nftComingSoonText {
-    font-family: var(--bungee-hairline);
-    font-weight: 1000;
+    font-family: var(--Panton-Light-Caps);
     font-size: 4rem;
     color: var(--pinkBackground);
     -webkit-text-stroke: 1px var(--pinkBackground);
