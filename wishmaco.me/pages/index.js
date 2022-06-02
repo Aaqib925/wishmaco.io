@@ -5,6 +5,7 @@ import GuideLinesSection from '../components/Guidelines';
 import ImageFormat from '../components/ImageFormat';
 import IntroSection from '../components/Intro'
 import MobileView from '../components/MobileView';
+import MoodBoard from '../components/MoodBoard';
 import PublicMintSection from '../components/PublicMint'
 import RoadMapSection from '../components/RoadMapSection'
 import TeamSection from '../components/Team'
@@ -29,6 +30,7 @@ export default function Home() {
           <>
             <IntroSection />
             <GuideLinesSection />
+            <MoodBoard />
             <AboutUsSection />
             <RoadMapSection />
             <TeamSection />
