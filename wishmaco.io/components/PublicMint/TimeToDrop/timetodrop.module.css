@@ -32,6 +32,7 @@
     justify-content: center;
     display: flex;
     background-color: var(--pinkBackground);
+    font-family: var(--Panton-Black-Caps);
     border-radius: 10px;
     width: 2.2rem;
     height: 3rem;
@@ -57,7 +58,7 @@
 .eachCountSeperator {
     color: var(--pinkBackground);
     font-family: var(--Panton-Black-Caps);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0 5px;
 }
 
@@ -74,5 +75,11 @@
 
     .eachCountText {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timeDropText {
+        margin-top: 1.6rem;
     }
 }

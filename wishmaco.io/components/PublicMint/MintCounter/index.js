@@ -28,9 +28,9 @@ const MintCounter = () => {
         }
     }
 
-    const RenderButton = ({ title , type}) => {
+    const RenderButton = ({ title, type, className = "" }) => {
         return (
-            <div onClick={() => handleClick(type)} className={mintCounterStyles.buttonContainer}>
+            <div onClick={() => handleClick(type)} className={`${mintCounterStyles.buttonContainer} ${className}`}>
                 <span className={mintCounterStyles.counterText}>{title}</span>
             </div>
         )
@@ -47,14 +47,14 @@ const MintCounter = () => {
             <span className={mintCounterStyles.mintPriceText}>{mintPrice.toFixed(4)} ETH</span>
 
             <div className={mintCounterStyles.actionButtons}>
-                <RenderButton title={<>&#8722;</>} type={BUTTON_TYPE.SUBTRACT}/>
+                <RenderButton className={mintCounterStyles.subtractIcon} title={<>&#8722;</>} type={BUTTON_TYPE.SUBTRACT} />
                 <RenderCounter />
-                <RenderButton title={<>&#10010;</>} type={BUTTON_TYPE.ADD}/>
+                <RenderButton title={<>&#10010;</>} type={BUTTON_TYPE.ADD} />
             </div>
 
             <div className={mintCounterStyles.mintButtons}>
-                <RenderMintButton title="Male Mint" className={mintCounterStyles.mintButton} />
-                <RenderMintButton title="Female Mint" className={mintCounterStyles.mintButton} />
+                <RenderMintButton title="Male Mint" textClassName={mintCounterStyles.mintButtonText} className={mintCounterStyles.mintButton} />
+                <RenderMintButton title="Female Mint" textClassName={mintCounterStyles.mintButtonText} className={mintCounterStyles.mintButton} />
             </div>
         </div>
     )

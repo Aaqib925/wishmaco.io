@@ -5,12 +5,13 @@
     justify-content: center;
     width: 100%;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .walletConnectText {
     font-family: var(--Panton-Black-Caps);
     color: var(--pinkBackground);
-    font-size: 1.5rem;
+    font-size: 1.36rem;
     margin-bottom: 0.5rem;
 }
 
@@ -21,4 +22,16 @@
 
 .connectButtonText {
     color: var(--secondaryBackgroundColor);
+    font-size: 2.3rem !important;
+}
+
+@media screen and (max-width: 400px) {
+    .walletConnectText {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .connectWalletContainer {
+        margin-top: 0.6rem;
+    }
 }

@@ -10,8 +10,12 @@
 .mintPriceText {
     font-family: var(--Panton-Black-Caps);
     color: var(--secondaryBackgroundColor);
-    font-size: 2rem;
+    font-size: 2.6rem;
     text-align: center;
+}
+
+.mintButtonText {
+    font-size: 2.3rem !important;
 }
 
 .actionButtons {
@@ -19,8 +23,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 0.2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
     z-index: 2;
 }
 
@@ -50,20 +54,22 @@
     background-color: var(--whiteText);
     font-family: var(--Panton-Black-Caps);
     font-size: 2rem;
-    border-radius: 100px;
+    border-radius: 150px;
     margin: 0 1rem;
     border-radius: 50%;
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
 }
 
 .buttonContainer span {
     color: var(--secondaryBackgroundColor);
     text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 2.7rem;
 }
 
 .counterContainer span {
     color: var(--secondaryBackgroundColor);
     text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 2.7rem;
 }
 
 .mintButtons {
@@ -73,10 +79,32 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
+    margin-top: 1rem;
 }
 
 .mintButton {
     background-color: var(--secondaryBackgroundColor);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     cursor: pointer;
+}
+
+.subtractIcon {
+    font-weight: 1000;
+    font-family: var(--Panton-Black-Caps);
+}
+
+@media screen and (max-width : 400px) {
+    .mintCounterContainer {
+        margin: 0;
+        margin-top: 1.7rem;
+    }
+
+    .mintButton {
+        margin-bottom: 0.7rem;
+    }
+
+    .actionButtons {
+        margin-bottom: 0.6rem;
+    }
+
 }
