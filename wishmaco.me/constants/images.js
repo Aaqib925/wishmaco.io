@@ -4,4 +4,5 @@ module.exports = {
     "headshot3": '/headshot3.png',
     "headshot4": '/headshot4.png',
     "headshot5": '/headshot5.png',
+    "noSelfieIcon": '/noSelfieIcon.png'
 }

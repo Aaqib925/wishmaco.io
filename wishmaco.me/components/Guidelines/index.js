@@ -1,9 +1,13 @@
 import React from 'react'
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen'
+import ImageFormat from '../ImageFormat'
 import CustomMarque from '../shared/marque'
 import guideLinesStyles from './guidelines.module.css'
 import { SectionImageAndContent } from './helper'
 
 const GuideLinesSection = () => {
+
+    const isMobile = useCheckMobileScreen();
 
     const RenderImageAndContent = () => {
         return (
@@ -41,12 +45,21 @@ const GuideLinesSection = () => {
     return (
         <>
             <div className={guideLinesStyles.guideLinesContainer}>
-                <CustomMarque title='About Us' className={guideLinesStyles.removeMarqueTopMargin} />
+                {
+                    isMobile ?
+                        <CustomMarque title='HEADSHOT DIRECTION' className={guideLinesStyles.removeMarqueTopMargin} />
+                        : <></>
+                }
                 <div className={guideLinesStyles.initialSection}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET, CLEAR WITH NO DARK SHADOWS</span>
                     <span>NOTHING COVERS YOUR FACE; NO GLASSES, NO HAIR OR HANDS</span>
                 </div>
                 <RenderImageAndContent />
+                {
+                    !isMobile ?
+                        <ImageFormat /> :
+                        <></>
+                }
             </div>
         </>
     )

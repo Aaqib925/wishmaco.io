@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import AboutUsSection from '../components/AboutUs'
 import GuideLinesSection from '../components/Guidelines';
+import ImageFormat from '../components/ImageFormat';
 import IntroSection from '../components/Intro'
 import MobileView from '../components/MobileView';
 import PublicMintSection from '../components/PublicMint'
