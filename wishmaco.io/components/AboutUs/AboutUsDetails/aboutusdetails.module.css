@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem 0;
+    padding-bottom: 2rem;
 }
 
 .buttonContainer {
@@ -15,14 +16,15 @@
     align-items: center;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
     box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.43), inset -3px 4px 10px rgba(163, 163, 163, 0.28);
 }
 
 .buttonText {
-    color: var(--lightBlue);
+    color: var(--lightBlue) !important;
     font-size: 2.5rem;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 .aboutUsDetailsContainer span {
@@ -30,6 +32,19 @@
     font-size: 2.4rem;
     text-align: center;
     color: var(--whiteText);
+    line-height: 100%;
+}
+
+.customText {
+    color: var(--lightBlue) !important;
+}
+
+.aboutUsDetailsText {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Laptop */
@@ -56,6 +71,7 @@
 
     .buttonText {
         font-size: 2rem !important;
+        line-height: 2rem !important;
     }
 
     .aboutUsDetailsContainer span {
@@ -81,6 +97,7 @@
 
     .buttonText {
         font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
     }
 
     .aboutUsDetailsContainer span {
@@ -91,6 +108,7 @@
 @media screen and (max-width: 694px) {
     .buttonText {
         font-size: 1.4rem !important;
+        line-height: 1.4rem !important;
     }
 
     .aboutUsDetailsContainer span {
@@ -101,6 +119,7 @@
 @media screen and (max-width: 575px) {
     .buttonText {
         font-size: 1.3rem !important;
+        line-height: 1.3rem !important;
     }
 
     .aboutUsDetailsContainer span {
@@ -115,6 +134,7 @@
 
     .buttonText {
         font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
     }
 
     .aboutUsDetailsContainer span {
@@ -126,6 +146,7 @@
 @media screen and (max-width: 400px) {
     .buttonText {
         font-size: 1.1rem !important;
+        line-height: 1.1rem !important;
     }
 
     .aboutUsDetailsContainer span {

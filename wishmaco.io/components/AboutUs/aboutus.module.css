@@ -22,6 +22,7 @@
 
 .removeMarqueTopMargin {
     margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
 }
 
 @media screen and (max-width: 767px) {

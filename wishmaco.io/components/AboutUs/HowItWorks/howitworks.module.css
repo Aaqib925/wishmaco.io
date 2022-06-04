@@ -4,11 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.9rem;
 }
 
 .removeMarqueTopMargin {
     margin-top: 0 !important;
+    margin-bottom: 1.3rem !important;
 }
 
 .guidelineText {
@@ -16,6 +17,7 @@
     font-size: 2.4rem;
     text-align: center;
     color: var(--whiteText);
+    line-height: 100%;
 }
 
 .guidelineTextAddTopMargin {
@@ -27,7 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 0;
+    padding-top: 1.3rem
 }
 
 .personalizeText {
@@ -35,6 +37,7 @@
     font-size: 2.4rem;
     text-align: center;
     color: var(--lightBlue);
+    line-height: 100%;
 }
 
 .guidelineContainer {
@@ -45,7 +48,12 @@
 
 .nftYourSelfButton {
     background-color: var(--pinkBackground);
-    margin-left: 1rem;
+    margin-left: 0.6rem;
+}
+
+.nftYourSelfButtonText {
+    font-size: 2.4rem !important;
+    line-height: 100%;
 }
 
 /* Ipad */

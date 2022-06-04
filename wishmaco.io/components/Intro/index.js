@@ -12,7 +12,7 @@ const IntroSection = () => {
             <Logo />
             <CustomMarque />
             <NFTSection />
-            <CustomMarque title='Mint' className={introSectionStyles.removeMarqueMarginBottom}/>
+            <CustomMarque direction='right' title='Mints' className={introSectionStyles.removeMarqueMarginBottom} />
         </div>
     )
 }

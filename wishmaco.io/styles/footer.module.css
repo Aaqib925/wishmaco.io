@@ -6,9 +6,15 @@
     align-items: center;
     background-color: var(--backgroundColor);
     padding: 2rem 0;
+    z-index: 22;
 }
 
 .footerLogo {
     width: auto;
     height: 7em;
+}
+
+.footerIcons {
+    margin-top: 0;
+    padding: 0;
 }

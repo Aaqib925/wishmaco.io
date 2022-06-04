@@ -16,7 +16,7 @@
 .mintCountText {
     font-family: var(--Panton-Black-Caps);
     color: var(--secondaryBackgroundColor);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin: 1rem 0;
 }
 
@@ -27,7 +27,7 @@
     }
 
     .mintCountText {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
         margin: 0;
     }
 }
@@ -38,6 +38,6 @@
     }
 
     .mintCountText {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
     }
 }

@@ -11,7 +11,7 @@
 .teamContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
-    opacity: 0.08;
+    opacity: 0.04;
     top: 0;
     left: 0;
     bottom: 0;
@@ -22,6 +22,7 @@
 
 .teamMarqueTopPadding {
     margin-top: 0 !important;
+    z-index: 22;
 }
 
 /* Mobile */

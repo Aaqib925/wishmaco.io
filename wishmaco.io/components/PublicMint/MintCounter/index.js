@@ -7,7 +7,7 @@ const BUTTON_TYPE = {
 }
 
 const MintCounter = () => {
-    const [mintCounter, setMintCounter] = useState(0);
+    const [mintCounter, setMintCounter] = useState(1);
     const [mintPrice, setMintPrice] = useState(0.1555);
 
     const RenderCounter = () => {
@@ -22,7 +22,7 @@ const MintCounter = () => {
         if (buttonType === BUTTON_TYPE.ADD && mintCounter < 5) {
             setMintCounter(mintCounter + 1);
             setMintPrice(mintPrice + 0.1555);
-        } else if (buttonType === BUTTON_TYPE.SUBTRACT && mintCounter > 0) {
+        } else if (buttonType === BUTTON_TYPE.SUBTRACT && mintCounter - 1 > 0) {
             setMintCounter(mintCounter - 1);
             setMintPrice(mintPrice - 0.1555);
         }

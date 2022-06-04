@@ -54,10 +54,14 @@
     background-color: var(--whiteText);
     font-family: var(--Panton-Black-Caps);
     font-size: 2rem;
-    border-radius: 150px;
     margin: 0 1rem;
     border-radius: 50%;
-    padding: 0 0.8rem;
+    /* padding: 0 0.8rem; */
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .buttonContainer span {
