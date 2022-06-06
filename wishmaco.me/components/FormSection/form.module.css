@@ -35,6 +35,7 @@
     width: 100%;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 3rem;
+    max-width: 1445px;
 }
 
 .gridFirstItem {
@@ -140,7 +141,10 @@
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
 }
-
+.addressGuidelineText {
+    display: flex;
+    background-color: red;
+}
 @media screen and (max-width: 767px) {
     .formContainer {
         display: flex;

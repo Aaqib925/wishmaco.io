@@ -72,6 +72,9 @@ const FormSection = () => {
                 </div>
                 <RenderForm />
             </div>
+            <div className={formStyles.addressGuidelineText}>
+                <span>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZATION PER NFT</span>
+            </div>
         </div>
     )
 }
