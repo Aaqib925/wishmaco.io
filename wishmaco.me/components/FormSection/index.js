@@ -5,17 +5,17 @@ import formStyles from './form.module.css'
 import { MINT_TYPES_DATA } from './mintTypesData'
 const FormSection = () => {
 
-    const RenderConnectButton = () => {
+    const RenderConnectButton = React.memo(() => {
         return (
             <div className={formStyles.connectWalletContainer}>
                 <span>CONNECT WALLET BEFORE SENDING</span>
                 <Button title={"CONNECT"} className={formStyles.connectButton} textClassName={formStyles.connectButtonText} />
             </div>
         )
-    }
+    })
 
 
-    const RenderEachMintType = () => {
+    const RenderEachMintType = React.memo(() => {
         return (
             <div className={formStyles.gridPricingContainer} >
                 <div>
@@ -36,9 +36,9 @@ const FormSection = () => {
                 <RenderConnectButton />
             </div>
         )
-    }
+    })
 
-    const InputBox = ({ rightText = "RIGHT", ...props }) => {
+    const InputBox = React.memo(({ rightText = "RIGHT", ...props }) => {
         return (
             <div className={formStyles.inputBoxContainer}>
                 <CustomInput
@@ -48,9 +48,9 @@ const FormSection = () => {
                 <span className={formStyles.inputBoxContainerText}>{rightText}</span>
             </div>
         )
-    }
+    })
 
-    const RenderForm = () => {
+    const RenderForm = React.memo(() => {
         return (
             <div className={formStyles.formInputContainer}>
                 <InputBox rightText="Owner" placeholder="Enter your name" />
@@ -60,7 +60,7 @@ const FormSection = () => {
                 <InputBox rightText="Photo" rightButton="Upload" placeholder="Max 3 Photos" buttonClassName={formStyles.uploadButton} />
             </div>
         )
-    }
+    })
 
     return (
         <div className={formStyles.formContainer}>
@@ -73,7 +73,8 @@ const FormSection = () => {
                 <RenderForm />
             </div>
             <div className={formStyles.addressGuidelineText}>
-                <span>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZATION PER NFT</span>
+                <span className={formStyles.eachAddresGuideLineText}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZATION PER NFT</span>
+                <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
             </div>
         </div>
     )

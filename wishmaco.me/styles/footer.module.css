@@ -6,6 +6,7 @@
     align-items: center;
     background-color: var(--backgroundColor);
     padding: 2rem 0;
+    padding-bottom: 10rem;
 }
 
 .footerLogo {

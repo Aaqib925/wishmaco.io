@@ -141,10 +141,36 @@
     box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
     filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
 }
+
 .addressGuidelineText {
     display: flex;
-    background-color: red;
+    width: 100%;
+    padding: 0 3rem;
+    max-width: 1445px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 13%;
 }
+
+.buttonContainer {
+    background-color: var(--secondaryBackgroundColor);
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.15), inset -4px 4px 8px rgba(255, 255, 255, 0.15);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.buttonText {
+    color: var(--whiteText);
+    font-size: 1.8rem;
+}
+
+.eachAddresGuideLineText {
+    color: var(--secondaryBackgroundColor);
+    font-family: var(--Panton-Bold);
+    font-size: 1.8rem;
+}
+
 @media screen and (max-width: 767px) {
     .formContainer {
         display: flex;
