@@ -10,5 +10,6 @@ module.exports = {
     "sadMood": '/sadMood.png',
     'angryMood': '/angryMood.png',
     'showMood': '/showMood.png',
-    'noneMood': '/noneMood.png'
+    'noneMood': '/noneMood.png',
+    'headShotPlaceHolder': '/headShotPlaceHolder.png',
 }

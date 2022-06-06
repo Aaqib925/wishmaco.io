@@ -3,12 +3,19 @@ import Button from './button'
 
 const CustomInput = ({
   placeholder = "placeholder",
-  className = ""
+  className = "",
+  rightButton = false,
+  buttonClassName = "",
+  textClassName = ""
 }) => {
   return (
     <div className={`customInputContainer ${className}`}>
       <input type="text" placeholder={placeholder} />
-      <Button title='Send' className={`customInputButtonContainer`} textClassName={`customInputButtonText`} />
+      {
+        rightButton ?
+          <Button title={rightButton} className={`customInputButtonContainer ${buttonClassName}`} textClassName={`customInputButtonText ${textClassName}`} />
+          : <></>
+      }
     </div>
   )
 }

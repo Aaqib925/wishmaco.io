@@ -77,13 +77,17 @@ a {
   padding: 0.1rem 1rem;
   box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
   filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .buttonTextStyles {
   color: var(--whiteText);
   font-size: 1.8rem;
   text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
-
+  line-height: 100%;
 }
 
 .marque-dot {
@@ -116,6 +120,7 @@ a {
   flex: 1;
   border: none;
   width: 80%;
+  background-color: var(--whiteText);
 }
 
 .customInputContainer input:focus,
@@ -125,7 +130,6 @@ a {
 
 .customInputContainer input[type="text"] {
   font-size: 1rem;
-  font-family: var(--Panton-Black-Caps);
 }
 
 .customInputButtonContainer {

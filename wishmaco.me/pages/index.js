@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import AboutUsSection from '../components/AboutUs'
+import FormSection from '../components/FormSection';
 import GuideLinesSection from '../components/Guidelines';
 import ImageFormat from '../components/ImageFormat';
 import IntroSection from '../components/Intro'
@@ -31,9 +32,8 @@ export default function Home() {
             <IntroSection />
             <GuideLinesSection />
             <MoodBoard />
-            <AboutUsSection />
-            <RoadMapSection />
-            <TeamSection />
+            <FormSection />
+            {/* <TeamSection /> */}
           </>
       }
     </div>

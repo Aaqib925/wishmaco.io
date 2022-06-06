@@ -1,0 +1,152 @@
+.formContainer {
+    background-color: var(--lightBlue);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.formContainer::after {
+    content: "";
+    background: url("/sectionTexture1.jpg");
+    opacity: 0.08;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--pinkBackground);
+    font-family: var(--Panton-Black-Caps);
+    text-align: center;
+    text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+    z-index: 9;
+}
+
+.formGridContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem;
+}
+
+.gridFirstItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mintPriceText {
+    font-size: 3rem;
+    color: var(--secondaryBackgroundColor);
+    font-family: var(--Panton-Black-Caps);
+    line-height: 100%;
+}
+
+.gridPricingContainer {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    justify-content: space-around;
+}
+
+.connectWalletContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connectWalletContainer span {
+    font-size: 1.2rem;
+    color: var(--pinkBackground);
+    font-family: var(--Panton-Bold);
+    line-height: 100%;
+}
+
+.mintTypeText {
+    font-family: var(--Panton-Black-Caps);
+    color: var(--whiteText);
+    font-size: 4rem;
+    line-height: 100%;
+}
+
+.mintSubscipt {
+    font-family: var(--Panton-Black-Caps);
+    color: var(--secondaryBackgroundColor);
+    line-height: 100%;
+    font-size: 2rem;
+}
+
+.headshotImage {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.eachPricingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.connectButton {
+    background-color: var(--whiteText);
+    margin-top: 0.5rem;
+}
+
+.connectButtonText {
+    color: var(--secondaryBackgroundColor) !important;
+    line-height: 100% !important;
+    font-size: 1.8rem !important;
+    font-family: var(--Panton-Black-Caps) !important;
+}
+
+.formInputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputBoxContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.inputBoxContainerText {
+    width: 20%;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-family: var(--Panton-Black-Caps);
+    color: var(--secondaryBackgroundColor);
+}
+
+.inputBox {
+    height: 2.5rem;
+    width: 80%;
+}
+
+.uploadButton {
+    background-color: var(--pinkBackground);
+    box-shadow: inset -4px 4px 2px rgba(255, 255, 255, 0.15);
+    filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 767px) {
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 2rem 1rem
+    }
+}
