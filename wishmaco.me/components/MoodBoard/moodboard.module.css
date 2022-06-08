@@ -85,6 +85,22 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1240px) {
+    .moodImagesContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .eachMoodContainer {
+        width: 100%;
+    }
+
+    .eachMoodContainer img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .moodBoardContainer {
         display: flex;

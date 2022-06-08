@@ -149,8 +149,8 @@
     max-width: 1445px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-right: 13%;
+    align-items: flex-start;
+    padding-right: 12%;
 }
 
 .buttonContainer {
@@ -178,5 +178,55 @@
         justify-content: space-between;
         height: 100%;
         padding: 2rem 1rem
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .headshotImage {
+        height: 12rem;
+    }
+
+    .mintTypeText {
+        font-size: 3.2rem;
+    }
+
+    .mintPriceText {
+        font-size: 2.6rem;
+    }
+
+    .mintSubscipt {
+        font-size: 1.7rem;
+    }
+
+    .connectWalletContainer span {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 970px) {
+    .formGridContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .desktopConnectButton {
+        display: none;
+    }
+
+    .eachPricingContainer {
+        flex-direction: column;
+    }
+
+    .gridPricingContainer {
+        padding: 0;
+        flex: 0.7;
+    }
+
+    .gridFirstItem {
+        justify-content: center;
+    }
+
+    .eachPricingContainer {
+        align-items: center;
     }
 }

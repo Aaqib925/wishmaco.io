@@ -33,7 +33,9 @@ const FormSection = () => {
                         })
                     }
                 </div>
-                <RenderConnectButton />
+                <div className={formStyles.desktopConnectButton}>
+                    <RenderConnectButton />
+                </div>
             </div>
         )
     })
