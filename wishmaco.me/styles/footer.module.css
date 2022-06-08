@@ -13,3 +13,11 @@
     width: auto;
     height: 7em;
 }
+
+.footerLogo {
+    transition: all .3s ease-in-out;
+}
+
+.footerLogo:hover {
+    transform: scale(1.2);
+}
