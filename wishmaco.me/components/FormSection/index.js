@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 import { headShotPlaceHolder } from '../../constants/images'
 import { Button, CustomInput } from '../shared'

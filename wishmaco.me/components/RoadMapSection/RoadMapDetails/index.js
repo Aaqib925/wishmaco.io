@@ -17,7 +17,7 @@ const RoadMapDetails = () => {
                 <span className={roadMapDetailStyles.metaverseTextStyles}>to build our virtual store</span>
             </div>
             <div className={roadMapDetailStyles.metverseTextContainer}>
-                <span className={roadMapDetailStyles.metaverseTextStyles}>We're looking to integrate our nfts </span>
+                <span className={roadMapDetailStyles.metaverseTextStyles}>{`We're looking to integrate our nfts`} </span>
                 <span className={roadMapDetailStyles.metaverseTextStyles}>as avatars in metaverse</span>
             </div>
         </div>
