@@ -1,15 +1,18 @@
-.publicMintContainer {
-    background-color: var(--lightBlue);
+.sectionContainer {
+    background-color: var(--backgroundColor);
     justify-content: center;
     align-items: center;
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: 2rem 0;
     position: relative;
 }
 
-.publicMintContainer::after {
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.sectionContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
     opacity: 0.08;
@@ -21,12 +24,15 @@
     z-index: 1;
 }
 
+.removeMarqueMarginBottom {
+    margin-bottom: 0 !important;
+}
+
 @media screen and (max-width: 767px) {
-    .publicMintContainer {
+    .sectionContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        padding: 2rem 1rem
     }
 }

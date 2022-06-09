@@ -11,7 +11,7 @@ const MoodBoard = () => {
     const RenderNftYourself = () => {
         return (
             <div className={moodBoardStyles.nftYourselfContainer}>
-                <CustomMarque title='WISHMACO' className={moodBoardStyles.removeMarqueTopMargin} />
+                <CustomMarque direction='right' title='WISHMACO' className={moodBoardStyles.removeMarqueTopMargin} />
                 <NFTSection />
                 <CustomMarque title='NFT YOURSELF' className={moodBoardStyles.removeMarqueBottomMargin} />
             </div>

@@ -1,16 +1,11 @@
 import Head from 'next/head';
 
-import AboutUsSection from '../components/AboutUs'
 import FormSection from '../components/FormSection';
 import GuideLinesSection from '../components/Guidelines';
-import ImageFormat from '../components/ImageFormat';
 import IntroSection from '../components/Intro'
 import MobileView from '../components/MobileView';
 import MoodBoard from '../components/MoodBoard';
-import PublicMintSection from '../components/PublicMint'
-import RoadMapSection from '../components/RoadMapSection'
 import { Footer } from '../components/shared';
-import TeamSection from '../components/Team'
 import useCheckMobileScreen from '../hooks/useCheckMobileScreen';
 
 export default function Home() {

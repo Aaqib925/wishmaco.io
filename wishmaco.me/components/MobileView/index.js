@@ -3,10 +3,11 @@ import $ from 'jquery';
 import initPagePilling from './jquery.pagepiling'
 import animationStyles from './animation.module.css'
 import IntroSection from '../Intro';
-import PublicMintSection from '../PublicMint';
-import AboutUsSection from '../AboutUs';
-import RoadMapSection from '../RoadMapSection';
-import TeamSection from '../Team';
+import GuideLinesSection from '../Guidelines';
+import MoodBoard from '../MoodBoard';
+import FormSection from '../FormSection';
+import { Footer } from '../shared';
+import NoSelfieSection from '../NoSelfieSection';
 
 const MobileView = () => {
     useEffect(() => {
@@ -47,24 +48,32 @@ const MobileView = () => {
                 </div>
                 <div className="section">
                     <div className={animationStyles.sectionContainer} >
-                        <PublicMintSection />
+                        <GuideLinesSection />
                     </div>
                 </div>
                 <div className="section">
                     <div className={animationStyles.sectionContainer} >
-                        <AboutUsSection />
+                        <NoSelfieSection />
                     </div>
                 </div>
                 <div className="section">
                     <div className={animationStyles.sectionContainer} >
-                        <RoadMapSection />
+                        <MoodBoard />
                     </div>
                 </div>
                 <div className="section">
                     <div className={animationStyles.sectionContainer} >
-                        <TeamSection />
+                        <FormSection />
                     </div>
                 </div>
+                {/* 
+               
+               
+                <div className="section">
+                    <div className={animationStyles.sectionContainer} >
+                        <Footer />
+                    </div>
+                </div> */}
 
             </div>
         </>

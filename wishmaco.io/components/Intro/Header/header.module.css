@@ -12,3 +12,11 @@
     height: 2.5rem;
     margin: 0.5rem;
 }
+
+.headerImage {
+    transition: all .3s ease-in-out;
+}
+
+.headerImage:hover {
+    transform: scale(1.4);
+}

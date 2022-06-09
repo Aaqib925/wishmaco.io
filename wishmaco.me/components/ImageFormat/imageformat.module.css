@@ -32,3 +32,18 @@
     font-size: 2rem;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .imageFormatContainer img {
+        height: 8rem;
+    }
+
+    .imageResolutionText {
+        padding: 0 1rem;
+    }
+
+    .imageResolutionText span {
+        font-size: 1.5rem;
+    }
+
+}

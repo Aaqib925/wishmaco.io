@@ -105,8 +105,25 @@
     .moodBoardContainer {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .moodImagesContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         justify-content: space-between;
         height: 100%;
-        padding: 2rem 1rem
+        padding: 0 2rem;
+    }
+
+
+    .eachMoodContainer {
+        width: 100%;
+    }
+
+    .eachMoodContainer img {
+        width: 50%;
+        height: 50%;
     }
 }

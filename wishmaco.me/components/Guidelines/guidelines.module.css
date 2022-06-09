@@ -85,11 +85,39 @@
 }
 
 @media screen and (max-width: 767px) {
+    .removeMarqueTopMargin {
+        margin-bottom: 0.5rem !important;
+    }
+
     .guideLinesContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 100%;
-        padding: 2rem 1rem
+        padding: 0;
+    }
+
+    .initialSection {
+        padding: 0 1rem;
+    }
+
+    .initialSection span {
+        font-size: 1.3rem;
+    }
+
+    .sectionImageContainer {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .sectionText span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sectionImageContainer {
+        width: 6em;
+        height: 6rem;
     }
 }

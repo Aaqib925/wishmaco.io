@@ -7,6 +7,7 @@
     background-color: var(--backgroundColor);
     padding: 2rem 0;
     padding-bottom: 10rem;
+    z-index: 99;
 }
 
 .footerLogo {
@@ -20,4 +21,15 @@
 
 .footerLogo:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+    .footerLogo {
+        display: none;
+        padding: 0;
+    }
+
+    .footerContainer {
+        padding: 0;
+    }
 }
