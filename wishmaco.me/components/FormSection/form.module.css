@@ -171,14 +171,36 @@
     font-size: 1.8rem;
 }
 
-@media screen and (max-width: 767px) {
-    .formContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        padding: 2rem 1rem
-    }
+.eachAddresGuideLineTextMob {
+    color: var(--secondaryBackgroundColor);
+    font-family: var(--Panton-Bold);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0 .2rem;
+    display: none;
+}
+
+.inputBoxContainerTextMob {
+    display: none;
+    width: 20%;
+    font-size: 1.5rem;
+    font-family: var(--Panton-Black-Caps);
+    color: var(--secondaryBackgroundColor);
+}
+
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.mobileConnectButton {
+    display: none;
+    margin: 0.2rem 0;
+}
+
+.footerContainerMob {
+    display: none;
+    width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -228,5 +250,127 @@
 
     .eachPricingContainer {
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .removeMarqueTopMargin {
+        margin-bottom: 0 !important;
+    }
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .mintTypeText {
+        font-size: 2rem;
+    }
+
+    .mintPriceText {
+        font-size: 2.3rem;
+    }
+
+    .mintSubscipt {
+        font-size: 1.5rem;
+    }
+
+    .headshotImage {
+        height: 8rem;
+    }
+
+    .inputBoxContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputBoxContainerTextMob {
+        display: block;
+    }
+
+    .inputBoxContainerText {
+        display: none;
+    }
+
+    .formGridContainer {
+        padding: 0;
+    }
+
+    .mobileConnectButton {
+        display: block;
+    }
+
+    .gridPricingContainer {
+        flex: 0.4;
+    }
+
+    .eachAddresGuideLineTextMob {
+        display: block;
+    }
+
+    .eachAddresGuideLineText {
+        display: none;
+    }
+
+    .addressGuidelineText {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputBoxContainer {
+        margin-bottom: 0.1rem;
+    }
+
+    .inputBox {
+        height: 2rem;
+    }
+
+    .footerContainerMob {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headshotImage {
+        height: 7rem;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .mintTypeText {
+        font-size: 2.2rem;
+    }
+
+    .mintPriceText {
+        font-size: 2rem;
+    }
+
+    .mintSubscipt {
+        font-size: 1.5rem;
+    }
+
+    .formGridContainer {
+        width: 100%;
+        padding: 0
+    }
+
+    .gridFirstItem {
+        justify-content: space-evenly
+    }
+
+
+    .buttonText,
+    .connectButtonText {
+        font-size: 1.5rem !important;
     }
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import { headShotPlaceHolder } from '../../constants/images'
-import { Button, CustomInput } from '../shared'
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen'
+import { Button, CustomInput, Footer } from '../shared'
+import CustomMarque from '../shared/marque'
 import formStyles from './form.module.css'
 import { MINT_TYPES_DATA } from './mintTypesData'
 const FormSection = () => {
+    const isMobile = useCheckMobileScreen();
+
 
     const RenderConnectButton = React.memo(() => {
         return (
@@ -43,6 +47,7 @@ const FormSection = () => {
     const InputBox = React.memo(({ rightText = "RIGHT", ...props }) => {
         return (
             <div className={formStyles.inputBoxContainer}>
+                <span className={`${formStyles.inputBoxContainerTextMob}`}>{rightText}</span>
                 <CustomInput
                     className={formStyles.inputBox}
                     {...props}
@@ -66,17 +71,28 @@ const FormSection = () => {
 
     return (
         <div className={formStyles.formContainer}>
+            {
+                isMobile ?
+                    <CustomMarque direction='right' title='NFT YOURSELF' className={formStyles.removeMarqueTopMargin} /> : <></>
+            }
             <span className={formStyles.title}>FACE ADD-ON</span>
             <div className={formStyles.formGridContainer}>
                 <div className={formStyles.gridFirstItem}>
                     <img src={headShotPlaceHolder} className={formStyles.headshotImage} />
                     <RenderEachMintType />
                 </div>
+                <div className={formStyles.mobileConnectButton}>
+                    <RenderConnectButton />
+                    <span className={formStyles.eachAddresGuideLineTextMob}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZATION PER NFT</span>
+                </div>
                 <RenderForm />
             </div>
             <div className={formStyles.addressGuidelineText}>
                 <span className={formStyles.eachAddresGuideLineText}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZATION PER NFT</span>
                 <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
+            </div>
+            <div className={formStyles.footerContainerMob}>
+                <Footer isMobileFooter={true} />
             </div>
         </div>
     )

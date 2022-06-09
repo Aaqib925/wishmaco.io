@@ -1,0 +1,38 @@
+.sectionContainer {
+    background-color: var(--backgroundColor);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.removeMarqueTopMargin {
+    margin-top: 0 !important;
+}
+
+.sectionContainer::after {
+    content: "";
+    background: url("/sectionTexture1.jpg");
+    opacity: 0.08;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.removeMarqueMarginBottom {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

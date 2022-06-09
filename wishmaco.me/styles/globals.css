@@ -340,3 +340,9 @@ a {
     font-size: 1.8rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .buttonTextStyles {
+    font-size: 1.3rem;
+  }
+}

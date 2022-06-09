@@ -20,3 +20,7 @@
 .headerImage:hover {
     transform: scale(1.4);
 }
+
+.removePadding {
+    padding: 0;
+}
