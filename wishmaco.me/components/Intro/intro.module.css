@@ -9,6 +9,7 @@
     margin-bottom: 0 !important;
 }
 
+
 .introSectionContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
@@ -40,5 +41,12 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 460px) {
+    .removeMarqueMarginTop {
+        margin-top: 0 !important;
     }
 }

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--backgroundColor);
+    z-index: 122;
 }
 
 .nftComingSoonText {
@@ -29,5 +30,11 @@
     .nftComingSoonText {
         margin: 0;
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .nftSectionContainer {
+        padding: 3rem 0;
     }
 }

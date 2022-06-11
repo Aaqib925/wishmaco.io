@@ -108,7 +108,7 @@
     .guideLinesContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 100%;
         padding: 0;
     }
@@ -135,6 +135,7 @@
     }
 
     .initialSectionMob {
+        margin-top: 0.2rem;
         display: flex;
     }
 
@@ -167,5 +168,10 @@
         /* height: 100%; */
         height: 8rem;
         margin-right: 0.5rem;
+    }
+
+    .sectionTextContainer {
+        margin: 1.3rem 0;
+        margin-top: 1.6rem;
     }
 }

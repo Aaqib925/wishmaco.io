@@ -21,6 +21,12 @@
     margin-top: 1.5rem;
 }
 
+.imageResMob {
+    display: none;
+}
+
+
+
 .imageResolutionPinkText {
     color: var(--pinkBackground) !important;
 }
@@ -43,7 +49,21 @@
     }
 
     .imageResolutionText span {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
+}
+
+@media screen and (max-width: 460px) {
+    .imageResDesk {
+        display: none;
+    }
+
+    .imageResMob {
+        display: flex;
+    }
+
+    .addTopMargin {
+        margin-top: 0.2rem;
+    }
 }

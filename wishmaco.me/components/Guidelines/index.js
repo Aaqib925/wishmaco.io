@@ -28,7 +28,7 @@ const GuideLinesSection = () => {
                                         each.text.map(eachText => {
                                             return (
                                                 <div className={guideLinesStyles.sectionText} key={eachText}>
-                                                    <span>{eachText}</span>
+                                                    <span style={{ color: each?.textColor }}>{eachText}</span>
                                                 </div>
                                             )
                                         })
@@ -39,7 +39,7 @@ const GuideLinesSection = () => {
                                         each.textDesc.map(eachText => {
                                             return (
                                                 <div className={guideLinesStyles.sectionText} key={eachText}>
-                                                    <span>{eachText}</span>
+                                                    <span style={{ color: each?.textColor }}>{eachText}</span>
                                                 </div>
                                             )
                                         })
@@ -63,13 +63,13 @@ const GuideLinesSection = () => {
                 }
                 <div className={`${guideLinesStyles.initialSection} ${guideLinesStyles.initialSectionDesk}`}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET, CLEAR WITH NO DARK SHADOWS</span>
-                    <span>NOTHING COVERS YOUR FACE, NO GLASSES, NO HAIR OR HANDS</span>
+                    <span>HAVE AN EMPTY BACKGROUND WITH YOUR FACE IN FOCUS</span>
                 </div>
                 <div className={`${guideLinesStyles.initialSection} ${guideLinesStyles.initialSectionMob}`}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET</span>
-                    <span className={guideLinesStyles.lightBlueDesc}>CLEAR WITH NO DARK SHADOWS</span>
-                    <span>NOTHING COVERS YOUR FACE</span>
-                    <span>NO GLASSES, NO HAIR OR HANDS</span>
+                    <span className={guideLinesStyles.lightBlueDesc}>WITH NO DARK SHADOWS</span>
+                    <span>HAVE AN EMPTY BACKGROUND</span>
+                    <span>WITH YOUR FACE IN FOCUS</span>
                 </div>
                 <RenderImageAndContent />
                 {

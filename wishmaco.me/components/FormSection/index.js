@@ -50,7 +50,7 @@ const FormSection = () => {
             <div className={formStyles.inputBoxContainer}>
                 <span className={`${formStyles.inputBoxContainerTextMob}`}>{rightText}</span>
                 <CustomInput
-                    className={formStyles.inputBox}
+                    className={`${formStyles.inputBox} ${formStyles.inputBoxMob}`}
                     {...props}
                 />
                 <span className={formStyles.inputBoxContainerText}>{rightText}</span>
@@ -62,7 +62,7 @@ const FormSection = () => {
         return (
             <div className={formStyles.formInputContainer}>
                 <InputBox rightText="Owner" placeholder="Enter your name" />
-                <InputBox rightText="NFT#" placeholder="Enter your item #" />
+                <InputBox rightText="NFT#" placeholder="Enter your NFT #" />
                 <InputBox rightText="Email" placeholder="Enter your email" />
                 <InputBox rightText="Mood" placeholder="Enter your mood choice" />
                 <InputBox rightText="Photo" rightButton="Upload" placeholder="Max 3 Photos" buttonClassName={formStyles.uploadButton} />
@@ -93,6 +93,7 @@ const FormSection = () => {
                 <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
             </div>
             <div className={formStyles.footerContainerMob}>
+                <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
                 <Footer isMobileFooter={true} />
             </div>
         </div>

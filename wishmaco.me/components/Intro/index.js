@@ -13,7 +13,7 @@ const IntroSection = () => {
         <div className={introSectionStyles.introSectionContainer}>
             <Header />
             <Logo />
-            <CustomMarque title='NFT YOURSELF' />
+            <CustomMarque title='NFT YOURSELF' className={introSectionStyles.removeMarqueMarginTop} />
             <NFTSection />
             <CustomMarque direction='right' title={isMobile ? 'WISHMACO' : 'HEADSHOT DIRECTIONS'} className={introSectionStyles.removeMarqueMarginBottom} />
         </div>
