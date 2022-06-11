@@ -41,7 +41,7 @@ const MobileView = () => {
     return (
         <>
             <div id="pagepiling">
-                <div className="section ">
+                <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <IntroSection />
                     </div>

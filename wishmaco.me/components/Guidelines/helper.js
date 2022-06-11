@@ -4,16 +4,19 @@ export const SectionImageAndContent = [
     {
         id: 1,
         images: [headshot1, headshot2],
-        text: ["HAVE A CLEAR BACKGROUND WITH YOUR FACE IN FOCUS"]
+        text: ["HAVE A CLEAR BACKGROUND", "WITH YOUR FACE IN FOCUS"],
+        textDesc: ["HAVE A CLEAR BACKGROUND WITH YOUR FACE IN FOCUS"]
     },
     {
         id: 2,
         images: [headshot3, headshot4],
-        text: ["BE CENTERED, FACING FORWARD WITHOUT ROTATING OR TILTING"]
+        text: ["BE CENTERED, FACING FORWARD WITHOUT ROTATING OR TILTING"],
+        textDesc: ["BE CENTERED, FACING FORWARD WITHOUT ROTATING OR TILTING"]
     },
     {
         id: 3,
         images: [headshot1, headshot5],
-        text: ["TEETH MUST BE HIDDEN,", "BE NEUTRAL WITH NO EXAGGERATED EXPRESSIONS"],
+        text: ["TEETH MUST BE HIDDEN,", "BE NEUTRAL WITH NO", "EXAGGERATED EXPRESSIONS"],
+        textDesc: ["TEETH MUST BE HIDDEN,", "BE NEUTRAL WITH NO EXAGGERATED EXPRESSIONS"],
     }
 ]

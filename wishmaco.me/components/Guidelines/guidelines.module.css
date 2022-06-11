@@ -31,6 +31,19 @@
     margin-bottom: 1rem;
 }
 
+.initialSectionMob {
+    display: none;
+}
+
+.sectionTextContainerMob {
+    display: none;
+}
+
+.sectionTextContainerDesk {
+    display: flex;
+}
+
+
 .initialSection span {
     font-family: var(--Panton-Bold);
     font-size: 2rem;
@@ -95,7 +108,7 @@
     .guideLinesContainer {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         height: 100%;
         padding: 0;
     }
@@ -116,11 +129,43 @@
     .sectionText span {
         font-size: 1.3rem;
     }
+
+    .initialSectionDesk {
+        display: none;
+    }
+
+    .initialSectionMob {
+        display: flex;
+    }
+
+    .sectionTextContainerDesk {
+        display: none;
+    }
+
+    .sectionTextContainerMob {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .sectionImageContainer {
         width: 6em;
         height: 6rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .sectionText {
+        margin-top: 0;
+    }
+
+    .sectionText span {
+        line-height: 100%;
+    }
+
+    .sectionImageContainer img {
+        /* height: 100%; */
+        height: 8rem;
+        margin-right: 0.5rem;
     }
 }

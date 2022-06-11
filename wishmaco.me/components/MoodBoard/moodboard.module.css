@@ -22,7 +22,7 @@
 
 .removeMarqueTopMargin {
     margin-top: 0 !important;
-    margin-bottom: 3rem;
+    margin-bottom: 1.2rem;
     z-index: 12;
 }
 
@@ -100,8 +100,8 @@
     }
 
     .eachMoodContainer img {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -127,7 +127,7 @@
     }
 
     .eachMoodContainer img {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     }
 }

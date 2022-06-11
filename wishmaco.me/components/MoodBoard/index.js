@@ -30,7 +30,6 @@ const MoodBoard = () => {
                         return (
                             <div className={moodBoardStyles.eachMoodContainer} key={each.id}>
                                 <img src={each.image} />
-                                <span>{each.name}</span>
                             </div>
                         )
                     })

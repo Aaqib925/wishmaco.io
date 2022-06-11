@@ -23,12 +23,23 @@ const GuideLinesSection = () => {
                                         })
                                     }
                                 </div>
-                                <div className={guideLinesStyles.sectionTextContainer}>
+                                <div className={`${guideLinesStyles.sectionTextContainer} ${guideLinesStyles.sectionTextContainerMob}`}>
                                     {
                                         each.text.map(eachText => {
                                             return (
                                                 <div className={guideLinesStyles.sectionText} key={eachText}>
-                                                    <span >{eachText}</span>
+                                                    <span>{eachText}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                                <div className={`${guideLinesStyles.sectionTextContainer} ${guideLinesStyles.sectionTextContainerDesk}`}>
+                                    {
+                                        each.textDesc.map(eachText => {
+                                            return (
+                                                <div className={guideLinesStyles.sectionText} key={eachText}>
+                                                    <span>{eachText}</span>
                                                 </div>
                                             )
                                         })
@@ -50,9 +61,15 @@ const GuideLinesSection = () => {
                         <CustomMarque title='HEADSHOT DIRECTIONS' className={guideLinesStyles.removeMarqueTopMargin} />
                         : <></>
                 }
-                <div className={guideLinesStyles.initialSection}>
+                <div className={`${guideLinesStyles.initialSection} ${guideLinesStyles.initialSectionDesk}`}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET, CLEAR WITH NO DARK SHADOWS</span>
                     <span>NOTHING COVERS YOUR FACE, NO GLASSES, NO HAIR OR HANDS</span>
+                </div>
+                <div className={`${guideLinesStyles.initialSection} ${guideLinesStyles.initialSectionMob}`}>
+                    <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET</span>
+                    <span className={guideLinesStyles.lightBlueDesc}>CLEAR WITH NO DARK SHADOWS</span>
+                    <span>NOTHING COVERS YOUR FACE</span>
+                    <span>NO GLASSES, NO HAIR OR HANDS</span>
                 </div>
                 <RenderImageAndContent />
                 {
