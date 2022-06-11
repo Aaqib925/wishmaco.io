@@ -12,7 +12,7 @@
 .formContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
-    opacity: 0.08;
+    opacity: 0.04;
     top: 0;
     left: 0;
     bottom: 0;
@@ -26,7 +26,6 @@
     color: var(--pinkBackground);
     font-family: var(--Panton-Black-Caps);
     text-align: center;
-    text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
     z-index: 9;
 }
 
@@ -35,6 +34,7 @@
     width: 100%;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 3rem;
+    padding-bottom: 0.5rem;
     max-width: 1445px;
 }
 
@@ -57,7 +57,8 @@
     flex: 1;
     flex-direction: column;
     padding: 1rem 1rem;
-    justify-content: space-around;
+    padding-bottom: 0.8rem;
+    justify-content: space-between;
 }
 
 .connectWalletContainer {
@@ -90,6 +91,7 @@
 .headshotImage {
     height: 15rem;
     object-fit: cover;
+    margin-left: 20px;
 }
 
 .eachPricingContainer {
@@ -100,7 +102,7 @@
 
 .connectButton {
     background-color: var(--whiteText);
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .connectButtonText {
@@ -114,13 +116,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: space-between;
 }
 
 .inputBoxContainer {
     display: flex;
     width: 100%;
     align-items: center;
-    margin-bottom: 0.5rem;
 }
 
 .inputBoxContainerText {
@@ -150,7 +152,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-right: 12%;
+    padding-right: 13.50%;
 }
 
 .buttonContainer {
@@ -167,16 +169,20 @@
 
 .eachAddresGuideLineText {
     color: var(--secondaryBackgroundColor);
-    font-family: var(--Panton-Bold);
+    font-family: var(--Panton-Light-Caps);
+    font-weight: 600;
     font-size: 1.8rem;
+    margin-left: 20px;
+    margin-top: 0.4rem;
 }
 
 .eachAddresGuideLineTextMob {
     color: var(--secondaryBackgroundColor);
-    font-family: var(--Panton-Bold);
+    font-family: var(--Panton-Light-Caps);
     font-size: 0.9rem;
     text-align: center;
     margin-top: 0.5rem;
+    font-weight: 600;
     padding: 0 .2rem;
     display: none;
 }

@@ -8,7 +8,7 @@ import selfieStyles from './selfie.module.css';
 const NoSelfieSection = () => {
     return (
         <div className={selfieStyles.sectionContainer}>
-            <CustomMarque direction='right' className={selfieStyles.removeMarqueTopMargin} title='HEADSHOT DIRECTION' />
+            <CustomMarque direction='right' className={selfieStyles.removeMarqueTopMargin} title='HEADSHOT DIRECTIONS' />
             <ImageFormat />
             <CustomMarque title='NFT YOURSELF' />
             <NFTSection />

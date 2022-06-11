@@ -47,12 +47,12 @@ const GuideLinesSection = () => {
             <div className={guideLinesStyles.guideLinesContainer}>
                 {
                     isMobile ?
-                        <CustomMarque title='HEADSHOT DIRECTION' className={guideLinesStyles.removeMarqueTopMargin} />
+                        <CustomMarque title='HEADSHOT DIRECTIONS' className={guideLinesStyles.removeMarqueTopMargin} />
                         : <></>
                 }
                 <div className={guideLinesStyles.initialSection}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET, CLEAR WITH NO DARK SHADOWS</span>
-                    <span>NOTHING COVERS YOUR FACE; NO GLASSES, NO HAIR OR HANDS</span>
+                    <span>NOTHING COVERS YOUR FACE, NO GLASSES, NO HAIR OR HANDS</span>
                 </div>
                 <RenderImageAndContent />
                 {

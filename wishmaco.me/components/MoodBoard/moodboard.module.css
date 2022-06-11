@@ -11,7 +11,7 @@
 .moodBoardContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
-    opacity: 0.08;
+    opacity: 0.02;
     top: 0;
     left: 0;
     bottom: 0;
@@ -23,6 +23,7 @@
 .removeMarqueTopMargin {
     margin-top: 0 !important;
     margin-bottom: 3rem;
+    z-index: 12;
 }
 
 .removeMarqueBottomMargin {
@@ -40,6 +41,7 @@
     font-family: var(--Panton-Black-Caps);
     color: var(--pinkBackground);
     font-size: 4rem;
+    text-align: center;
 }
 
 .moodImagesContainer {
@@ -83,6 +85,8 @@
 
 .nftYourselfContainer {
     width: 100%;
+    z-index: 20;
+    background-color: var(--backgroundColor);
 }
 
 @media screen and (max-width: 1240px) {

@@ -28,9 +28,9 @@
 .imageResolutionText span {
     font-family: var(--Panton-Bold);
     color: var(--lightBlue);
-    text-shadow: -1px 4px 8px #000000;
     font-size: 2rem;
     text-align: center;
+    line-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
