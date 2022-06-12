@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.6rem;
+    padding-top: 1rem;
     padding-bottom: 0.6rem;
     margin-bottom: 1.6rem;
     box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.43), inset -3px 4px 10px rgba(163, 163, 163, 0.28);
@@ -45,6 +45,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.aboutUsDetailMob {
+    display: none;
+}
+
+.buttonContainerMob {
+    display: none;
 }
 
 /* Laptop */
@@ -143,13 +151,53 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .buttonText {
-        font-size: 1.1rem !important;
-        line-height: 1.1rem !important;
+        font-size: 1.5rem !important;
+        line-height: 100% !important;
     }
 
     .aboutUsDetailsContainer span {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+    }
+
+    .aboutUsDetailDesk {
+        display: none;
+    }
+
+    .aboutUsDetailMob {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .buttonContainer {
+        display: none;
+    }
+
+    .buttonContainerMob {
+        display: flex;
+        flex-direction: column;
+        border-radius: 50px;
+        width: 90%;
+    }
+
+    .aboutUsDetailsContainer {
+        padding-top: 0.2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .buttonContainerMob {
+        width: 100%;
+    }
+
+    .aboutUsDetailsContainer span {
+        font-size: 1.4rem;
+    }
+
+    .aboutUsDetailMob {
+        display: flex;
+        margin-bottom: 0;
     }
 }

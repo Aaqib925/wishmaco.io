@@ -19,6 +19,10 @@
     margin-bottom: 1rem;
 }
 
+.nftYourselfLogoText {
+    font-size: 1.8rem;
+}
+
 /* Mini Laptop */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .logoImage {
@@ -35,12 +39,14 @@
 
 /* Mobile */
 @media screen and (max-width: 470px) {
-    .logoImage {
-        height: 12rem
+    .nftYourselfLogo {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        /* margin-top: 1rem; */
     }
 
-    .nftYourselfLogo {
-        margin-top: 2rem;
+    .logoImage {
+        height: 11rem
     }
 }
 

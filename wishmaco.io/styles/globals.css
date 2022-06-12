@@ -110,6 +110,20 @@ a {
   flex: 1;
   border: none;
   width: 80%;
+  background-color: var(--whiteText);
+}
+
+.customInputContainer textarea {
+  display: none;
+  flex: 1;
+  border: none;
+  width: 80%;
+  background-color: var(--whiteText);
+}
+
+
+.customInputContainer textarea::placeholder {
+  font-size: 0.7rem;
 }
 
 .customInputContainer input:focus,
@@ -117,13 +131,27 @@ a {
   outline: none;
 }
 
+.customInputContainer textarea:focus,
+.customInputContainer textarea:focus {
+  outline: none;
+}
+
+
 .customInputContainer input[type="text"] {
   font-size: 1rem;
 }
 
+.customInputContainer textarea[type="text"] {
+  font-size: 1rem;
+}
+
+
+
 .customInputButtonContainer {
   background-color: var(--secondaryBackgroundColor);
-  padding: 0 0.6rem;
+  box-shadow: none;
+  padding: 0rem 0.4rem;
+  filter: none
 }
 
 .customInputButtonText {
@@ -328,5 +356,26 @@ a {
 
   .marque-dot {
     font-size: 1.8rem;
+  }
+
+  .customInputContainer input {
+    display: none;
+  }
+
+  .customInputContainer textarea {
+    display: flex;
+    width: 70%;
+  }
+
+  .customInputContainerButton {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customInputContainer {
+    height: 2.5rem;
+    padding-left: 0.5rem;
   }
 }

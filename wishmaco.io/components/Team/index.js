@@ -8,7 +8,7 @@ const TeamSection = () => {
     return (
         <div className={teamStyles.teamContainer}>
             <CustomMarque title='The team' className={teamStyles.teamMarqueTopPadding} />
-            <TeamProfiles />
+            {/* <TeamProfiles /> */}
             <Footer />
         </div>
     )

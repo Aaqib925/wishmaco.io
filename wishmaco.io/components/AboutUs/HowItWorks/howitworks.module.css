@@ -56,6 +56,14 @@
     line-height: 100%;
 }
 
+.guidelineTextDesk {
+    display: flex;
+}
+
+.guidelineTextMob {
+    display: none;
+}
+
 /* Ipad */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .guidelineText {
@@ -164,17 +172,63 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .guidelineText {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .personalizeText {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+    }
+
+    .nftYourSelfButton {
+        margin-bottom: 1rem;
+        margin-left: 0;
     }
 
     .nftYourSelfButtonText {
-        font-size: 1.1rem !important;
+        font-size: 1.3rem !important;
     }
 
+    .guidelineTextDesk {
+        display: none;
+    }
+
+    .guidelineTextMob {
+        display: flex;
+    }
+
+    .personalizeTextContainer {
+        margin-bottom: 1rem;
+    }
+
+    .removeMarqueTopMargin {
+        margin-bottom: 1rem !important
+    }
+
+    .nftYourSelfButton {
+        margin-top: 0.2rem;
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .guidelineText {
+        font-size: 1.3rem;
+    }
+
+    .personalizeText {
+        font-size: 1.3rem;
+    }
+
+    .removeMarqueTopMargin {
+        margin-bottom: 0.5rem !important
+    }
+
+    .nftYourSelfButtonText {
+        font-size: 1.3rem !important;
+    }
 }

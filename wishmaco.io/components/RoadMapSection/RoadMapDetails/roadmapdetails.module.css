@@ -57,6 +57,18 @@
     max-width: 520px;
 }
 
+.containerDesk {
+    display: flex;
+}
+
+.containerMobile {
+    display: none;
+}
+
+.removeTopPadding {
+    margin-top: 0;
+}
+
 /* Laptop */
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
     .buttonContainer {
@@ -159,17 +171,54 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
+    .containerDesk {
+        display: none;
+    }
+
+    .containerMobile {
+        display: flex;
+    }
+
+    .textInputContainer {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .metverseTextContainer {
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .roadMapDetailsContainer {
+        margin-top: 0.5rem;
+    }
+
     .roadMapTextStyles {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .feedbackContainer span {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .metaverseTextStyles {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .roadMapTextStyles {
+        font-size: 1.3rem;
+    }
+
+    .feedbackContainer span {
+        font-size: 1.3rem;
+    }
+
+    .metaverseTextStyles {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
     }
 }

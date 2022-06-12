@@ -11,7 +11,7 @@
 
 .footerLogo {
     width: auto;
-    height: 7em;
+    height: 7rem;
 }
 
 .footerLogo {
@@ -25,4 +25,13 @@
 .footerIcons {
     margin-top: 0;
     padding: 0;
+    padding-top: 0 !important;
+}
+
+@media screen and (max-width: 460px) {
+    .footerLogo {
+        width: auto;
+        height: 5rem;
+    }
+
 }

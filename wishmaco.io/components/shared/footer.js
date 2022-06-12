@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className={footerStyles.footerContainer}>
             <img src='/wishMacoLogo.png' className={footerStyles.footerLogo} />
-            <Header className={footerStyles.footerIcons} />
+            <Header isFooter={true} className={footerStyles.footerIcons} />
         </div>
     )
 }

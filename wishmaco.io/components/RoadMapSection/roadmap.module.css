@@ -29,6 +29,7 @@
     box-shadow: -4px 9px 10px rgba(0, 0, 0, 0.43), inset -3px 4px 10px rgba(163, 163, 163, 0.28);
     display: flex;
     justify-content: center;
+    width: 100%
 }
 
 .roadMapButton {
@@ -43,6 +44,30 @@
 
 .containerPadding {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nftSectionContainer {
+    background-color: var(--backgroundColor);
+    z-index: 22;
+    width: 100%;
+}
+
+.roadMapButtonMob {
+    display: none;
+}
+
+.roadMapButtonMobButonText {
+    color: var(--whiteText);
+    font-size: 1.8rem;
+    text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Panton-Black-Caps);
 }
 
 /* Laptop */
@@ -82,6 +107,14 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .roadMapContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+}
 
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -150,6 +183,40 @@
     }
 }
 
+@media screen and (max-width: 460px) {
+    .roadMapButtonDesk {
+        display: none;
+    }
+
+    .roadMapButtonMob {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0;
+        padding-top: 0.7rem;
+    }
+
+    .roadMapButtonMobButonText {
+        font-size: 1.6rem;
+        line-height: 100%;
+    }
+
+    .roadMapButtonContainer {
+        width: 100%
+    }
+
+    .containerPadding {
+        padding: 0.2rem 0;
+    }
+
+    .nftSectionContainer {
+        height: 25%;
+    }
+
+}
+
 @media screen and (max-width: 400px) {
     .roadMapButton {
         font-size: 1.2rem !important;
@@ -158,13 +225,8 @@
     .aboutUsDetailsContainer span {
         font-size: 1.1rem;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .roadMapContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
+    .roadMapButtonMobButonText {
+        font-size: 1.5rem;
     }
 }

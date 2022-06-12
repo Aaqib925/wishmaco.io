@@ -9,13 +9,19 @@ const RoadMapSection = () => {
     return (
         <div className={roadMapStyles.roadMapContainer}>
             <CustomMarque className={roadMapStyles.removeMarqueTopMargin} />
-            <NFTSection />
-            <CustomMarque title='Roadmap' direction='right' />
+            <div className={roadMapStyles.nftSectionContainer}>
+                <NFTSection />
+            </div>
+            <CustomMarque title='Roadmap' direction='right' className={roadMapStyles.removeMarqueTopMargin} />
             <div className={roadMapStyles.containerPadding}>
-                <Button title='our roadmap will grow as we grow' className={roadMapStyles.roadMapButtonContainer} textClassName={roadMapStyles.roadMapButton} />
+                <Button title='our roadmap will grow as we grow' className={`${roadMapStyles.roadMapButtonContainer} ${roadMapStyles.roadMapButtonDesk}`} textClassName={roadMapStyles.roadMapButton} />
+                <div className={`${roadMapStyles.roadMapButtonContainer} ${roadMapStyles.roadMapButtonMob}`}>
+                    <span className={roadMapStyles.roadMapButtonMobButonText}>our roadmap will</span>
+                    <span className={roadMapStyles.roadMapButtonMobButonText}>grow as we grow</span>
+                </div>
                 <RoadMapDetails />
             </div>
-        </div>
+        </div >
     )
 }
 

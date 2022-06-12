@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react'
 import { formatTimerDuration } from '../../../utils';
 import timeToDropStyles from './timetodrop.module.css'
 
-const endTime = moment().add(20, 'days');
+const endTime = moment('2022-08-08')
 
 const TimeToDrop = () => {
-    const [duration, setDuration] = useState([ ]);
+    const [duration, setDuration] = useState([]);
     useEffect(() => {
         let interval = setInterval(() => {
             setDuration(formatTimerDuration(moment(), endTime));

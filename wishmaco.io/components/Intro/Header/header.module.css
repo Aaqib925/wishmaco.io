@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    cursor: pointer;
 }
 
 .headerImage {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0.5rem;
+    cursor: pointer;
 }
 
 .headerImage {
@@ -19,4 +19,8 @@
 
 .headerImage:hover {
     transform: scale(1.4);
+}
+
+.removePadding {
+    padding: 0;
 }

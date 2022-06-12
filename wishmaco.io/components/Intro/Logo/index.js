@@ -4,8 +4,8 @@ import logoStyles from './logo.module.css'
 const Logo = () => {
   return (
     <div className={logoStyles.logoContainer}>
-        <img src="/wishMacoLogo.png" className={logoStyles.logoImage}/>
-        <Button title='NFT YOURSELF' className={logoStyles.nftYourselfLogo}/>
+      <img src="/wishMacoLogo.png" className={logoStyles.logoImage} />
+      <Button title='NFT YOURSELF' textClassName={logoStyles.nftYourselfLogoText} className={logoStyles.nftYourselfLogo} />
     </div>
   )
 }

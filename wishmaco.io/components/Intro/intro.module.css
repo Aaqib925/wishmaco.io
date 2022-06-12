@@ -9,10 +9,11 @@
     margin-bottom: 0 !important;
 }
 
+
 .introSectionContainer::after {
     content: "";
     background: url("/sectionTexture1.jpg");
-    opacity: 0.03;
+    opacity: 0.02;
     top: 0;
     left: 0;
     bottom: 0;
@@ -40,5 +41,12 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 460px) {
+    .removeMarqueMarginTop {
+        margin-top: 0 !important;
     }
 }
