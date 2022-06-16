@@ -49,4 +49,8 @@
     .removeMarqueMarginTop {
         margin-top: 0 !important;
     }
+
+    .mobileHalf {
+        height: 55vh;
+    }
 }

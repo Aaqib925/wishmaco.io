@@ -20,7 +20,7 @@ const HowItWorks = () => {
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextMob}`}>
                     Then upload your headshot to
                 </span>
-                <Button title='NFT yourself' className={howItWorksStyles.nftYourSelfButton} textClassName={howItWorksStyles.nftYourSelfButtonText} />
+                <Button title='NFT yourself' className={`glowButton2 ${howItWorksStyles.nftYourSelfButton}`} textClassName={howItWorksStyles.nftYourSelfButtonText} />
             </div>
             <div className={howItWorksStyles.personalizeTextContainer}>
                 <span className={`${howItWorksStyles.personalizeText}  ${howItWorksStyles.guidelineTextDesk}`}>
@@ -38,7 +38,7 @@ const HowItWorks = () => {
             </div>
             <div className={howItWorksStyles.personalizeTextContainer}>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextDesk}`}>
-                    Each wallet address is limited to 1 customizatize
+                    Each wallet address is limited to 1 customise
                 </span>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextMob}`}>
                     Each wallet address is limited
@@ -47,7 +47,7 @@ const HowItWorks = () => {
                     per nft; only then the headless nft is restricted
                 </span>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextMob}`}>
-                    To 1 customizatize per nft;
+                    To 1 customise per nft;
                 </span>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextMob}`}>
                     only then the headless nft is
@@ -56,10 +56,10 @@ const HowItWorks = () => {
                     restricted from transfer,
                 </span>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextDesk}`}>
-                    from transfer, but it will still be sellable
+                    from transfer, however it will still be sellable
                 </span>
                 <span className={`${howItWorksStyles.guidelineText} ${howItWorksStyles.guidelineTextMob}`}>
-                    but it will still be sellable
+                    however it will still be sellable
                 </span>
             </div>
         </div>

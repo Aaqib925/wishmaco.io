@@ -66,4 +66,8 @@
     .addTopMargin {
         margin-top: 0.2rem;
     }
+
+    .imageResolutionPinkText {
+        font-size: 1.5rem !important;
+    }
 }

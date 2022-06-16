@@ -190,7 +190,115 @@ a {
   color: var(--secondaryBackgroundColor);
 }
 
+.glowButton {
+  position: relative;
+  margin: auto;
+  text-decoration: none;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: white;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(160deg, #EB5C68, #EB5C68);
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  /* box-shadow: 0 0 0 0 #ec008c, 0.2rem 0.2rem 15px #13092d; */
+  box-shadow: 0 0 10px 2px #EB5C68, 0.2rem 0.2rem 15px #13092d;
+  transition: box-shadow 0.6s;
+}
 
+.glowButton:hover {
+  box-shadow: 0 0 30px 2px #EB5C68, 0.2rem 0.2rem 15px #13092d;
+}
+
+.glowButton:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 30px;
+  background-image: linear-gradient(170deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+
+.glowButton2 {
+  position: relative;
+  /* padding-right: 1.5rem; */
+  /* padding-left: 1.5rem; */
+  line-height: 3rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(160deg, #EB5C68, #EB5C68);
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  /* box-shadow: 0 0 0 0 #ec008c, 0.2rem 0.2rem 15px #13092d; */
+  box-shadow: 0 0 10px 2px #EB5C68, 0.2rem 0.2rem 15px #13092d;
+  transition: box-shadow 0.6s;
+  z-index: 888;
+}
+
+.glowButton2:hover {
+  box-shadow: 0 0 30px 2px #EB5C68, 0.2rem 0.2rem 15px #13092d;
+}
+
+.glowButton2:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 30px;
+  background-image: linear-gradient(170deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.glowBlueButton {
+  position: relative;
+  margin: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(160deg, var(--secondaryBackgroundColor), var(--secondaryBackgroundColor));
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  /* box-shadow: 0 0 0 0 #ec008c, 0.2rem 0.2rem 15px #13092d; */
+  box-shadow: 0 0 30px 2px var(--secondaryBackgroundColor), 0.2rem 0.2rem 15px;
+  transition: box-shadow 0.6s;
+}
+
+.glowBlueButton:hover {
+  box-shadow: 0 0 30px 2px var(--secondaryBackgroundColor), 0.2rem 0.2rem 15px;
+}
+
+.glowBlueButton:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 30px;
+  background-image: linear-gradient(170deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
 
 .setHtmlOverflowHidden {
   overflow: hidden;

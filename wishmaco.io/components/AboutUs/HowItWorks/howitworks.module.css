@@ -170,6 +170,11 @@
     .personalizeTextContainer {
         padding: 0rem 0;
     }
+
+    .nftYourSelfButton {
+        margin: 0.5rem 0;
+        margin-bottom: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -182,7 +187,6 @@
     }
 
     .nftYourSelfButton {
-        margin-bottom: 1rem;
         margin-left: 0;
     }
 
@@ -207,7 +211,7 @@
     }
 
     .nftYourSelfButton {
-        margin-top: 0.2rem;
+        margin-top: 0.4rem;
     }
 
     .nftYourSelfButtonText {

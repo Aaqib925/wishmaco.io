@@ -39,28 +39,28 @@ const MobileView = () => {
 
     return (
         <>
-            <div >
-                <div >
+            <div id="pagepiling">
+                <div className="section ">
                     <div className={animationStyles.sectionContainer} >
                         <IntroSection />
                     </div>
                 </div>
-                <div >
+                <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <PublicMintSection />
                     </div>
                 </div>
-                <div >
+                <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <AboutUsSection />
                     </div>
                 </div>
-                <div>
+                <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <RoadMapSection />
                     </div>
                 </div>
-                <div>
+                <div className="section">
                     <div className={animationStyles.sectionContainer} >
                         <TeamSection />
                     </div>

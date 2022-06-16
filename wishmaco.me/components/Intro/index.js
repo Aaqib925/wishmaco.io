@@ -7,7 +7,6 @@ import CustomMarque from '../shared/marque'
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen'
 
 const IntroSection = () => {
-    const isMobile = useCheckMobileScreen();
 
     return (
         <div className={introSectionStyles.introSectionContainer}>
@@ -15,7 +14,7 @@ const IntroSection = () => {
             <Logo />
             <CustomMarque title='NFT YOURSELF' className={introSectionStyles.removeMarqueMarginTop} />
             <NFTSection />
-            <CustomMarque direction='right' title={isMobile ? 'WISHMACO' : 'HEADSHOT DIRECTIONS'} className={introSectionStyles.removeMarqueMarginBottom} />
+            <CustomMarque direction='right' title={'HEADSHOT DIRECTIONS'} className={introSectionStyles.removeMarqueMarginBottom} />
         </div>
     )
 }

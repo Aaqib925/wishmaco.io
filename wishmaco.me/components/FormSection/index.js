@@ -84,18 +84,18 @@ const FormSection = () => {
                 </div>
                 <div className={formStyles.mobileConnectButton}>
                     <RenderConnectButton />
-                    <span className={formStyles.eachAddresGuideLineTextMob}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZE PER NFT</span>
                 </div>
                 <RenderForm />
+                <span className={formStyles.eachAddresGuideLineTextMob}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZE PER NFT</span>
+
             </div>
             <div className={formStyles.addressGuidelineText}>
                 <span className={formStyles.eachAddresGuideLineText}>EACH ADDRESS IS LIMITED TO 1 CUSTOMIZE PER NFT</span>
                 <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
             </div>
-            <div className={formStyles.footerContainerMob}>
+            {/* <div className={formStyles.footerContainerMob}>
                 <Button title='SEND' className={formStyles.buttonContainer} textClassName={formStyles.buttonText} />
-                <Footer isMobileFooter={true} />
-            </div>
+            </div> */}
         </div>
     )
 }

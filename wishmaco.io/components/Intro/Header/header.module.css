@@ -21,6 +21,12 @@
     transform: scale(1.4);
 }
 
+/* @media (hover: none) {
+    .headerImage:hover {
+        transform: initial
+    }
+} */
+
 .removePadding {
     padding: 0;
 }

@@ -53,8 +53,8 @@ const MintCounter = () => {
             </div>
 
             <div className={mintCounterStyles.mintButtons}>
-                <RenderMintButton title="Male Mint" textClassName={mintCounterStyles.mintButtonText} className={mintCounterStyles.mintButton} />
-                <RenderMintButton title="Female Mint" textClassName={mintCounterStyles.mintButtonText} className={mintCounterStyles.mintButton} />
+                <RenderMintButton title="Male Mint" textClassName={mintCounterStyles.mintButtonText} className={`${mintCounterStyles.mintButton} `} />
+                <RenderMintButton title="Female Mint" textClassName={mintCounterStyles.mintButtonText} className={`${mintCounterStyles.mintButton} `} />
             </div>
         </div>
     )

@@ -26,18 +26,11 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      {
-        isMobile ?
-          <MobileView />
-          :
-          <>
-            <IntroSection />
-            <GuideLinesSection />
-            <MoodBoard />
-            <FormSection />
-            <Footer />
-          </>
-      }
+      <IntroSection />
+      <GuideLinesSection />
+      <MoodBoard />
+      <FormSection />
+      <Footer />
     </div>
   )
 }

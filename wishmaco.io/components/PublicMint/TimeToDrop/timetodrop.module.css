@@ -78,8 +78,14 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .timeDropText {
-        margin-top: 1.6rem;
+@media screen and (max-width: 460px) {
+    .eachCountTextContainer {
+        margin: 0 1px;
+        width: 1.7rem;
+        height: 2.3rem;
+    }
+
+    .eachCountText {
+        font-size: 1.6rem;
     }
 }

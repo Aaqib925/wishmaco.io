@@ -24,12 +24,9 @@
 }
 
 @media screen and (max-width: 767px) {
-    .footerLogo {
-        display: none;
-        padding: 0;
-    }
+
 
     .footerContainer {
-        padding: 0;
+        padding-bottom: 2rem;
     }
 }

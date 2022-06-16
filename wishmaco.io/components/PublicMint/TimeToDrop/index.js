@@ -6,13 +6,13 @@ import timeToDropStyles from './timetodrop.module.css'
 const endTime = moment('2022-08-08')
 
 const TimeToDrop = () => {
-    const [duration, setDuration] = useState([]);
-    useEffect(() => {
-        let interval = setInterval(() => {
-            setDuration(formatTimerDuration(moment(), endTime));
-        }, 1000)
-        return () => clearInterval(interval)
-    }, [])
+    const [duration, setDuration] = useState(formatTimerDuration(moment(), endTime));
+    // useEffect(() => {
+    //     let interval = setInterval(() => {
+    //         setDuration(formatTimerDuration(moment(), endTime));
+    //     }, 1000)
+    //     return () => clearInterval(interval)
+    // }, [])
 
 
     const RenderTimer = () => {

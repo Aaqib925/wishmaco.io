@@ -7,11 +7,6 @@ export const MOOD_IMAGES_DATA = [
         name: 'HAPPY',
     },
     {
-        id: 2,
-        image: disgustMood,
-        name: 'DISGUST',
-    },
-    {
         id: 3,
         image: sadMood,
         name: 'SAD',
@@ -20,6 +15,11 @@ export const MOOD_IMAGES_DATA = [
         id: 4,
         image: angryMood,
         name: 'ANGRY',
+    },
+    {
+        id: 2,
+        image: disgustMood,
+        name: 'DISGUST',
     },
     {
         id: 5,
