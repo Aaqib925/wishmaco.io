@@ -20,7 +20,7 @@ const MoodBoard = () => {
 
     return (
         <div className={moodBoardStyles.moodBoardContainer}>
-            <CustomMarque title='MOOD BOARD' className={moodBoardStyles.removeMarqueTopMargin} />
+            {/* <CustomMarque title='MOOD BOARD' className={moodBoardStyles.removeMarqueTopMargin} /> */}
             <div className={moodBoardStyles.moodItemContainer}>
                 <span>CHOOSE ONE</span>
             </div>

@@ -10,17 +10,17 @@ import { Footer } from '../shared';
 import NoSelfieSection from '../NoSelfieSection';
 
 const MobileView = () => {
-    useEffect(() => {
-        adjustScreenView()
-        initPagePilling($, document, window);
-        $(document).ready(function () {
-            $('#pagepiling').pagepiling({
-                navigation: null
-            });
-        });
+    // useEffect(() => {
+    //     adjustScreenView()
+    //     initPagePilling($, document, window);
+    //     $(document).ready(function () {
+    //         $('#pagepiling').pagepiling({
+    //             navigation: null
+    //         });
+    //     });
 
-        return removeScreenView
-    }, []);
+    //     return removeScreenView
+    // }, []);
 
     const adjustScreenView = () => {
         const htmlContainer = document.querySelector('html');
@@ -40,28 +40,28 @@ const MobileView = () => {
 
     return (
         <>
-            <div id="pagepiling">
-                <div className="section">
+            <div>
+                <div >
                     <div className={animationStyles.sectionContainer} >
                         <IntroSection />
                     </div>
                 </div>
-                <div className="section">
+                <div >
                     <div className={animationStyles.sectionContainer} >
                         <GuideLinesSection />
                     </div>
                 </div>
-                <div className="section">
+                <div >
                     <div className={animationStyles.sectionContainer} >
                         <NoSelfieSection />
                     </div>
                 </div>
-                <div className="section">
+                <div >
                     <div className={animationStyles.sectionContainer} >
                         <MoodBoard />
                     </div>
                 </div>
-                <div className="section">
+                <div >
                     <div className={animationStyles.sectionContainer} >
                         <FormSection />
                     </div>

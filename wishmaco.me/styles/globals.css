@@ -69,6 +69,9 @@ a {
   --Panton-Black-Caps: "Panton-Black-Caps";
   --Panton-Light-Caps: "Panton-Light-Caps";
   --Panton-Bold: "Panton-Bold";
+  --spotOne: #26115a;
+  --spotTwo: #ec008c;
+  --spotThree: #ff0000;
 }
 
 .buttonStyles {
@@ -139,6 +142,44 @@ a {
 .customInputButtonText {
   color: var(--whiteText) !important;
 }
+
+.glowButton {
+  position: relative;
+  margin: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(160deg, #f00, #ec008c);
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 0 0 0 #ec008c, 0.5rem 0.5rem 30px #13092d;
+  transition: box-shadow 0.6s;
+}
+.glowButton:hover {
+  box-shadow: 0 0 60px 2px #ec008c, 0.5rem 0.5rem 30px #13092d;
+}
+.glowButton:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 30px;
+  background-image: linear-gradient(170deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */

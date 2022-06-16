@@ -56,11 +56,11 @@ const GuideLinesSection = () => {
     return (
         <>
             <div className={guideLinesStyles.guideLinesContainer}>
-                {
+                {/* {
                     isMobile ?
                         <CustomMarque title='HEADSHOT DIRECTIONS' className={guideLinesStyles.removeMarqueTopMargin} />
                         : <></>
-                }
+                } */}
                 <div className={`${guideLinesStyles.initialSection} ${guideLinesStyles.initialSectionDesk}`}>
                     <span className={guideLinesStyles.lightBlueDesc}>PHOTO MUST BE WELL LET, CLEAR WITH NO DARK SHADOWS</span>
                     <span>HAVE AN EMPTY BACKGROUND WITH YOUR FACE IN FOCUS</span>

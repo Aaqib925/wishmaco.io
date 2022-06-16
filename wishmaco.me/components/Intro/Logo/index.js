@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className={logoStyles.logoContainer}>
       <img src="/wishMacoLogo.png" className={logoStyles.logoImage} />
-      <Button title='NFT YOURSELF' textClassName={logoStyles.nftYourselfLogoText} className={logoStyles.nftYourselfLogo} />
+      <Button title='NFT YOURSELF' textClassName={logoStyles.nftYourselfLogoText} className={`glowButton`} />
     </div>
   )
 }
