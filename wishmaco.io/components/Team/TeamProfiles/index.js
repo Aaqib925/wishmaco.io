@@ -7,7 +7,7 @@ const TeamProfiles = () => {
     return (
         <div className={teamProfileStyles.teamProfileContainer}>
             <div className={teamProfileStyles.teamImagesContainer}>
-                {
+                {/* {
                     TEAM_MEMBERS.map(each => {
                         return (
                             <div key={each.id} className={teamProfileStyles.teamNameImageContainer} >
@@ -18,7 +18,7 @@ const TeamProfiles = () => {
                             </div>
                         )
                     })
-                }
+                } */}
             </div>
         </div>
     )
